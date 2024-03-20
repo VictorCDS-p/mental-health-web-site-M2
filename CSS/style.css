@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 * {
@@ -52,4 +53,24 @@ header nav ul li{
 
 #logo img{
     max-width: 150px;
+}
+
+.mental-health{
+    display: flex;
+    text-align:justify;
+    flex-direction:column;
+    padding: 5px 4px;
+    gap: 10px;
+    margin: 20px;
+    background-color: #ffffff;
+    max-width: 950px;
+
+}
+.mental-health article{
+    max-width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.mental-health h3{
+    font-size: 28px;
 }
