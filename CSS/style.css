@@ -1,0 +1,53 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+}
+
+body{
+    background-color: #ffffff;
+    height: 100vh;
+
+}
+
+
+
+
+/* Estilo cabeçalho */
+
+header{
+    padding: 40px 4%;
+    background-color: #add8e6;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(109, 108, 108);
+    text-decoration: none;
+}
+
+header a:hover{
+    display: inline-block;
+    color: #ffffcc;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+#logo img{
+    max-width: 150px;
+}
