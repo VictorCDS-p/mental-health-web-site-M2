@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: #ffffff;
+    background: linear-gradient(90deg, rgba(173,216,230,1) 0%, rgba(255,255,255,1) 53%, rgba(173,216,230,1) 100%);
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
 }
@@ -22,7 +22,7 @@ body{
 
 header{
     padding: 5px 4%;
-    background-color: #add8e6;
+    /* background-color: #ffffff; */
 }
 
 header > .interface{
@@ -32,7 +32,7 @@ header > .interface{
 }
 
 header a{
-    color: #ffffff;
+    color: #262323;
     text-decoration: none;
 }
 
@@ -62,7 +62,7 @@ header nav ul li{
     padding: 5px 4px;
     gap: 10px;
     margin: 20px;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     max-width: 950px;
 
 }
