@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-Br">
 <head>
@@ -29,16 +27,21 @@
                 </nav>
             </div>
     </header>
-          
+          <main>
     <div class="content" id="content">
+        <div class="botoes">
+        <button class="previous" onclick="previousInspiration()"> Anterior</button>
+    </div>
         <div class="card"  id="inspiration-card"></div>
         <div class="botoes">
-            <button class="previous" onclick="previousInspiration()">&laquo; Anterior</button>
-            <button class="next" onclick="nextInspiration()">Próximo &raquo;</button>
+            <button class="next" onclick="nextInspiration()">Próximo</button>
         </div>
     </div>
+    <div class="more">
+    <a href=""><button id="saber"> Saber Mais</button></div></a>
+</div>
 
-
+</main>
 <script src="../../JS/script.js"></script>
 <script src="./SCRIPT/inspiracoes.js"></script>
 </body>
