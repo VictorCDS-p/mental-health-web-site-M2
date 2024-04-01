@@ -29,6 +29,8 @@ function showInspiration() {
     divCards.appendChild(nameInpiration);
     divCards.appendChild(imageInspiration);
     divCards.appendChild(descriptionInspiraction);
+
+    imageInspiration.setAttribute("class", "imageInspiration")
 }
 
 function nextInspiration() {
