@@ -8,39 +8,52 @@
     <link rel="stylesheet" href="./CSS/apoio.css">
 </head>
 <body>
- <header>
+    <header>
         <div class="interface">
             <div id="logo">
                 <a href="../../../index.html">
-
-                    <img src="../Image/logo.png" alt="Logo" > 
+                    <img src="../Image/logo.png" alt="Logo"> 
                 </a>
             </div>
-                <nav class="menu-desktop">
-                    <ul>
-                        <li><a href="../../../index.html">Início</a></li>
-                        <li><a href="../recursos/recursos.html">Recursos</a></li>
-                        <li><a href="../inspirações/inspiracao.html">Inspirações</a></li>
-                        <li><a href="../apoio/apoio.html">Apoio</a></li>
-                    </ul>
-               
-                </nav>
-            </div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="../../../index.html">Início</a></li>
+                    <li><a href="../recursos/recursos.html">Recursos</a></li>
+                    <li><a href="../inspirações/inspiracao.html">Inspirações</a></li>
+                    <li><a href="../apoio/apoio.html">Apoio</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <div class="container">
+        <h2 class="title">Contato e Apoio</h2>
+        <p class="text">Se você ou alguém que você conhece está passando por uma crise, saiba que existem recursos disponíveis para oferecer apoio e atendimento.</p>
+        <ul class="contact-list">
+            <li><strong>Busque ajuda na sua UBS local ou Centro de Atenção Psicossocial (CAPS):</strong></li>
+            <li><a href="https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/caps">Mais informações aqui</a></li>
+            <li><strong>Centro de Valorização da Vida:</strong> <a href="tel:188">Disque 188</a></li>
+        </ul>
+        <p>Além dos serviços da rede pública, existem outras instituições que oferecem apoio em saúde mental com valores acessíveis ou próximos a gratuidade. Consulte aqui algumas organizações e canais de atendimento:</p>
+        
+        <div id="filters">
+            <label for="type-filter">Filtrar por:</label>
+            <select id="type-filter">
+                <option value="all">Todos</option>
+                <option value="online">Online</option>
+                <option value="presencial">Presencial</option>
+            </select>
+            <label for="region-search">Buscar região:</label>
+            <input type="text" id="region-search" placeholder="Digite a região...">
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-<script src="../apoio/SCRIPT/apoio.js"></script>
-<script src="./SCRIPT/apoio.js"></script>
+        <div id="institutions"></div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Saúde Mental e Bem-Estar</p>
+    </footer>
+    
+    <script src="./SCRIPT/apoio.js"></script>
 </body>
 </html>
