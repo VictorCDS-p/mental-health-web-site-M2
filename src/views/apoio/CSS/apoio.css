@@ -1,0 +1,60 @@
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    width: calc(25% - 20px);
+    margin-right: 20px;
+    float: left;
+    height: 200px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.text, .title, .contact-list{
+    padding: 10px;
+}
+
+.contact-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-list li {
+    display: block;
+    margin-bottom: 8px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42;
+}
+
+#institutions::after {
+    content: "";
+    display: table;
+    clear: both;
+}
