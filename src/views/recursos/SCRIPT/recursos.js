@@ -31,6 +31,8 @@ class Card {
     }
 }
 
+//CardContainer 1
+
 const mycard = new Card(
     "Headspace",
     "../Image/recursos/headspace.png",
@@ -52,14 +54,84 @@ const mycard3 = new Card(
     "https://insighttimer.com/br"
 )
 
+// CardContainer 2
+
+const mycard4 = new Card(
+    "Vittude",
+    "../Image/recursos/vittude.png",
+    "É uma plataforma brasileira que oferece terapia online com terapeutas licenciados. Eles permitem que você se conecte com um terapeuta por vídeo, chat ou chamada telefônica, e oferecem uma variedade de opções de terapia, incluindo terapia individual, terapia de casal e terapia familiar.",
+    "https://www.vittude.com/" 
+)
+
+const mycard5 = new Card(
+    "Psicologia Viva",
+    "../Image/recursos/psicologiaviva.png",
+    "É outra plataforma brasileira que oferece acesso a terapeutas e psicólogos licenciados. Eles têm uma ampla rede de profissionais e você pode se conectar com um terapeuta por vídeo, chat ou telefone, de acordo com suas preferências.",
+    "https://consultorioonline.psicologiaviva.com.br/cadastro?gclid=Cj0KCQjwq86wBhDiARIsAJhuphkTw5pz3wbxVTV_4_fp57T_0wjALLodbz9_v-Rewk4bt9E0FVEKCeMaAhqmEALw_wcB"
+)
+
+const mycard6 = new Card(
+    "Zenklub",
+    "../Image/recursos/none.png",
+    "Indefinido",
+    "miss_link"
+)
+
+// CardContainer 3
+
+const mycard7 = new Card(
+    "Default",
+    "../Image/recursos/none.png",
+    "Indefinido",
+    "miss_link"
+)
+
+const mycard8 = new Card(
+    "Default",
+    "../Image/recursos/none.png",
+    "Indefinido",
+    "miss_link"
+)
+
+const mycard9 = new Card(
+    "Default",
+    "../Image/recursos/none.png",
+    "Indefinido",
+    "miss_link"
+)
+
+//CardContainer 4
+
+const mycard10 = new Card(
+    "Default",
+    "../Image/recursos/none.png",
+    "Indefinido",
+    "miss_link"
+)
+
+const mycard11 = new Card(
+    "Default",
+    "../Image/recursos/none.png",
+    "Indefinido",
+    "miss_link"
+)
+
+const mycard12 = new Card(
+    "Default",
+    "../Image/recursos/none.png",
+    "Indefinido",
+    "miss_link"
+)
+
+
 var container = document.getElementById('cardContainer1');
 container.appendChild(mycard.render());
 container.appendChild(mycard2.render());
 container.appendChild(mycard3.render());
 
 var container = document.getElementById('cardContainer2');
-container.appendChild(mycard.render());
-container.appendChild(mycard2.render());
+container.appendChild(mycard4.render());
+container.appendChild(mycard5.render());
 container.appendChild(mycard2.render());
 
 
