@@ -60,22 +60,41 @@ header nav ul li{
 
 
 
-/* .mental-health{
+.welcome{
+    padding: 40px;
+    padding-bottom: 200px;
     display: flex;
-    text-align:justify;
-    flex-direction:column;
-    padding: 5px 4px;
-    gap: 10px;
-    margin: 20px;
-    /* background-color: #ffffff; */
-    /* max-width: 950px; */
-
-/* }
-.mental-health article{
-    max-width: 50%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    align-items: center;
+    flex-direction: column;
 }
-.mental-health h3{
-    font-size: 28px;
-} */ 
+
+.welcome h1{
+    padding-bottom: 20px;
+}
+
+.content{
+    padding: 40px;
+    text-align: left;
+    
+}
+
+.content h1{
+    padding-bottom: 20px;
+}
+
+.mentalImg img{
+    display: block; 
+    margin: 0 auto;
+    max-width: 500px;
+
+}
+
+.content .phrase{
+    padding: 40px;
+    text-align: end;
+}
+
+.content span{
+    font-style: italic;
+}
+
