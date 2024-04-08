@@ -1,22 +1,62 @@
-
 class Inspiration {
-    constructor(name, image, description,source) {
+    constructor(name, image, description) {
         this.name = name;
         this.image = image;
         this.description = description;
-        this.source = source;
     }
 }
+
+class MiniCard{
+    constructor(image,title,subtitle,name) {
+        this.image = image;
+        this.title = title;
+        this.subtitle =subtitle;
+        this.name = name;
+
+    }
+}
+let miniCardsArray = [];
 let inspirationArray = []; 
 let index = 0; 
 
+function creatMiniCard(miniCard){
+    miniCardsArray.push(miniCard);
+}
 function createArtista(inspiration) {
     inspirationArray.push(inspiration);
 }
+function showMiniCard(){
+   const cards = document.getElementById("mini-cards");
+   const cardsSection = document.getElementById("cards-section");
+   const miniCardIndex = miniCardsArray[index];
+   cards.style.display = "block";
 
+const miniCardImg = document.createElement('img');
+const miniCardTitle = document.createElement('h1');
+const miniCardSubTitle = document.createElement('h2');
+const miniCardName = document.createElement('h4');
+
+
+miniCardImg.src = miniCardIndex.image;
+miniCardTitle.innerText = miniCardIndex.title;
+miniCardSubTitle.innerText = miniCardIndex.subtitle;
+miniCardName.innerText = miniCardIndex.name;
+
+
+cardsSection.appendChild(miniCardImg);
+cardsSection.appendChild(miniCardTitle);
+cardsSection.appendChild(miniCardSubTitle);
+cardsSection.appendChild(miniCardName);
+}
+
+function closeMiniCard(){
+    const cards = document.getElementById("mini-cards");
+    cards.style.display = "none";
+ 
+ }
+ 
 function showInspiration() {
-    const divCards = document.getElementById('inspiration-card')
-    const moreButton = document.getElementById('more');
+    const divCards = document.getElementById('inspiration-card');
     const inspirationsIndex = inspirationArray[index];
     
     divCards.innerHTML = ''; 
@@ -28,13 +68,10 @@ function showInspiration() {
     nameInpiration.innerText = inspirationsIndex.name;
     imageInspiration.src = inspirationsIndex.image;
     descriptionInspiraction.innerText = inspirationsIndex.description;
+
     divCards.appendChild(nameInpiration);
     divCards.appendChild(imageInspiration);
     divCards.appendChild(descriptionInspiraction);
-
-    imageInspiration.setAttribute("class", "imageInspiration")
-    moreButton.setAttribute("href", inspirationsIndex.source)
-
 }
 
 function nextInspiration() {
@@ -57,18 +94,26 @@ function previousInspiration() {
 const lizzie = new Inspiration(
     "Lizzie Velasquez",
     "../Image/LizzieVelasquez.png",
-    'A norte-americana Lizzie Velasquez, conhecida como a mulher mais feia do mundo, é um dos mais belos exemplos de força de vontade.Lizzie nasceu com uma rara doença genética (ainda desconhecida) que impede o ganho de gordura corporal. Com menos de 30kg, a condição de Lizzie fez com que ficasse cega de um olho e desenvolvesse um frágil sistema imunitário.Alvo de cruéis ataques de bullying na escola e na internet (quando se tornou famosa com um vídeo que a intitulava “a mulher mais feia do mundo”), Lizzie enfrentou momentos de forte depressão.Mas, conhecida pela sua força e otimismo, Lizzie não se deixou abater e recuperou-se! A jovem usou a visibilidade negativa que atribuíram à sua imagem para iniciar uma campanha contra o cyberbullying ao redor de todo o mundo.',
-    'https://aventurasnahistoria.uol.com.br/noticias/reportagem/emocionante-historia-de-lizzie-velasquez-constantemente-vitima-de-bullying.phtml'
+    'A norte-americana Lizzie Velasquez, conhecida como a mulher mais feia do mundo, é um dos mais belos exemplos de força de vontade.Lizzie nasceu com uma rara doença genética (ainda desconhecida) que impede o ganho de gordura corporal. Com menos de 30kg, a condição de Lizzie fez com que ficasse cega de um olho e desenvolvesse um frágil sistema imunitário.Alvo de cruéis ataques de bullying na escola e na internet (quando se tornou famosa com um vídeo que a intitulava “a mulher mais feia do mundo”), Lizzie enfrentou momentos de forte depressão.Mas, conhecida pela sua força e otimismo, Lizzie não se deixou abater e recuperou-se! A jovem usou a visibilidade negativa que atribuíram à sua imagem para iniciar uma campanha contra o cyberbullying ao redor de todo o mundo.'
 );
 
 const luke = new Inspiration(
     "Luke Tyburski",
     "../Image/luke.png",
-    "Luke enfrentou uma batalha interna contra transtornos mentais, incluindo compulsão alimentar, depressão e uma obsessão prejudicial por exercícios físicos. Apesar de orientar outros sobre saúde e bem-estar durante o dia, à noite ele lutava secretamente contra seus próprios demônios. Essa vida dupla o consumiu por anos, levando-o a extremos como desafios físicos intensos para evitar enfrentar sua verdadeira dor emocional. Após buscar ajuda profissional e compartilhar suas lutas com entes queridos, Luke encontrou uma saída do ciclo destrutivo. Hoje, ele compartilha sua história para inspirar outros a encontrarem sua própria força interna e buscar ajuda quando necessário, comprometendo-se com a causa da saúde mental na comunidade. Sua jornada é um lembrete poderoso de que é possível encontrar esperança e cura, mesmo nos momentos mais sombrios da vida.",
-    'https://www.mentalhealth.org.uk/explore-mental-health/stories/lukes-story-binge-eating-depression-and-how-my-obsession-fitness-wasnt-necessarily-good-thing'
+    "Luke enfrentou uma batalha interna contra transtornos mentais, incluindo compulsão alimentar, depressão e uma obsessão prejudicial por exercícios físicos. Apesar de orientar outros sobre saúde e bem-estar durante o dia, à noite ele lutava secretamente contra seus próprios demônios. Essa vida dupla o consumiu por anos, levando-o a extremos como desafios físicos intensos para evitar enfrentar sua verdadeira dor emocional. Após buscar ajuda profissional e compartilhar suas lutas com entes queridos, Luke encontrou uma saída do ciclo destrutivo. Hoje, ele compartilha sua história para inspirar outros a encontrarem sua própria força interna e buscar ajuda quando necessário, comprometendo-se com a causa da saúde mental na comunidade. Sua jornada é um lembrete poderoso de que é possível encontrar esperança e cura, mesmo nos momentos mais sombrios da vida."
 );
 
 createArtista(luke);
 createArtista(lizzie);
 
-showInspiration();
+
+const lizzieCard = new MiniCard(
+    
+    "../Image/LizzieVelasquez.png",
+    "uma hirtoria de autoestima",
+    "conheça a nossa historia",
+    "Lizzie Velasquez",
+);
+
+creatMiniCard(lizzieCard);
+showMiniCard();

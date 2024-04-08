@@ -11,33 +11,31 @@ body {
 
 main{
   display: flex;
-  flex-direction:column;
-  align-items: center;
-}
-
-
-
-.content {
-  display: flex;
-  align-items: center; 
-  max-width: 80%;
-  max-height: 80%;
-  margin-top: 40px;
-
   
 }
 
 
+.content {
+  display: flex;
+  align-items:flex-start; 
+  gap: 30px;
+  margin-left: 100px;
 
-
+  
+}
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 20px;
     gap: 30px;
    
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  gap:25px;
+  margin-left:5px;
 }
 .title{
     display: flex;
@@ -45,38 +43,33 @@ main{
 
 }
 
-.card img{
-    width:auto;
-     height:300px;
+ .image-inspiration img{
+    width:600px;
+     height:500px;
      align-content: center;
      align-items: center;
-     border-radius: 10px;
 }
-
-.imageInspiration:hover{
-  border: 9px solid rgba(255,255,204,0.7);
-  transition: 0.3s;
-} 
 .card article{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     margin: 10px;
-    margin-top: 0; 
     font-family: 'Montserrat', sans-serif;
     color: #080000;
     font-size: 20px;
 
 }
-
-
+.card{
+  display:none;
+}
 
 
 
 
 h1, h2 {
     color: #add8e6; 
+    font-size: 40px;
 }
     
   .botoes button{
@@ -93,9 +86,7 @@ h1, h2 {
 
   }
 .botoes button:hover{
-  background-color: #90ee90;
-  width: 110%;
-  transition: 0.3s;
+  background-color: #90ee90; 
 }
 
 .more button{
