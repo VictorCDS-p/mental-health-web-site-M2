@@ -39,20 +39,27 @@
 
     <div class="index">
         <div>
-            <h2 class="title-index">Índice</h2>
+            <h2 class="title-index">Categorias</h2>
             <ul class="content">
                 <strong>
-                    <li><a class="panel-link" onclick="togglePanel('cardContainer1')">Aplicativos de Meditação e Mindfulness</a></li>
+                    <li id="item1" class="arrowdown"><a class="panel-link" onclick="togglePanel('cardContainer1','item1')">Aplicativos de Meditação e Mindfulness</a></li>
                 </strong>
                 <div id="cardContainer1" class="cardContainer"></div>
-                <div class="cardContainer"></div>
                 
                 <strong>
-                    <li><a class="panel-link" onclick="togglePanel('cardContainer2')">Plataformas Online de Terapia e Aconselhamento</a></li>
+                    <li id="item2" class="arrowdown"><a class="panel-link" onclick="togglePanel('cardContainer2','item2')">Plataformas Online de Terapia e Aconselhamento</a></li>
                 </strong>
                 <div id="cardContainer2" class="cardContainer"></div>
-                <strong><li>Tecnologias de Rastreamento e Monitoramento</li></strong>
-                <strong><li>Plataformas de Educação e Informação</li></strong>
+                
+                <strong>
+                    <li id="item3" class="arrowdown"><a class="panel-link" onclick="togglePanel('cardContainer3','item3')">Tecnologia de Rastreamento e Monitoramento</a></li>
+                </strong>
+                <div id="cardContainer3" class="cardContainer"></div>
+                
+                <strong>
+                    <li id="item4" class="arrowdown"><a class="panel-link" onclick="togglePanel('cardContainer4','item4')">Plataformas de Educação e Informação</a></li>
+                </strong>
+                <div id="cardContainer4" class="cardContainer"></div>
             </ul>
         </div>
     </div>

@@ -25,6 +25,29 @@
     
 }
 
+ul {
+    list-style-type: none;
+}
+
+.arrowdown {
+    padding-left: 50px;
+    background-image: url('../../Image/seta-para-baixo.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    line-height: 20px;
+    
+}
+
+.arrowup {
+    padding-left: 50px;
+    background-image: url('../../Image/seta-para-cima.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    line-height: 20px;
+}
+
 .content {
     flex: 1 1 300px;
     margin: 20px;
@@ -34,7 +57,6 @@
 .content li {
     padding-top: 30px;
     padding-bottom: 30px;
-    list-style-type: disc;
     font-size: 20px;
 }
 
@@ -44,24 +66,13 @@
     font-weight: bold;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
-    color: blue;
-    text-decoration: underline;
-
-}
-
 .card {
     background-color: white;
     border: 1px solid #000000;
     border-radius: 5px;
     padding: 20px;
     width: 300px;
-    margin: 10px;
+    margin: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
@@ -89,7 +100,7 @@ a:hover {
     cursor: pointer;
   }
 
-  .panel-link {
+  .panel-link:hover {
     color: blue; 
     text-decoration: underline; 
     cursor: pointer; 
