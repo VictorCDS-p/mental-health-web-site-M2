@@ -33,6 +33,7 @@ function showMiniCard(){
         divDescription.innerHTML = '';
      
         miniCardsArray.forEach(miniCardIndex => {
+            const sectionCards = document.getElementById("cards-section")
              const miniCardImg = document.createElement('img');
              const miniCardTitle = document.createElement('h2');
              const miniCardSubTitle = document.createElement('h3');
@@ -51,27 +52,13 @@ function showMiniCard(){
 
 
           
-miniCardImg.addEventListener('click', function() {
-    const miniCards = document.getElementById("mini-cards");
-    miniCards.style.display = "none";
+            sectionCards.addEventListener('click', function() {
+            const miniCards = document.getElementById("mini-cards");
+            miniCards.style.display = "none";
     
-    showInspiration();
-});
-
-
-miniCardName.addEventListener('click', function() {
-    const miniCards = document.getElementById("mini-cards");
-    miniCards.style.display = "none"; 
-    
-    showInspiration();
-});
-
+            showInspiration();});
         });
-
-
-
-        
-     }
+ }
      
 
     

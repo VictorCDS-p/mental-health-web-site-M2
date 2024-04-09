@@ -41,6 +41,7 @@ main{
   align-items: center;
   flex-direction: column;
   gap : 10px;
+  cursor: pointer;
   
 }
 #card-description{
@@ -50,6 +51,7 @@ main{
   align-content: space-around;
   width: 100%;
   font-size: 10px;
+  cursor: pointer;
 }
 #card-description  h2,h3,h5 {
   font-family: 'Montserrat', sans-serif;
