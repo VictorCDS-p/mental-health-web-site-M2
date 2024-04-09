@@ -130,7 +130,7 @@
 .filter label, .search label {
     margin-right: 10px;
     font-size: 16px;
-    color: #333; /* Cor do texto */
+    color: #333;
 }
 
 .filter select, .search input {
@@ -142,20 +142,20 @@
 }
 
 .filter select {
-    background-color: #f8f8f8; /* Cor de fundo */
+    background-color: #f8f8f8;
 }
 
 .search input {
-    width: 200px; /* Largura do campo de entrada */
+    width: 200px;
 }
 
 .search input::placeholder {
-    color: #999; /* Cor do texto de espaço reservado */
+    color: #999;
 }
 
 .filter select:focus, .search input:focus {
-    border-color: #f17894; /* Cor da borda ao focar */
-    box-shadow: 0 0 5px rgba(144, 238, 144, 0.5); /* Sombra ao focar */
+    border-color: #f17894;
+    box-shadow: 0 0 5px rgba(144, 238, 144, 0.5);
 }
 
 .card {
