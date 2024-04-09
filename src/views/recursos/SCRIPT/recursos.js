@@ -72,55 +72,55 @@ const mycard5 = new Card(
 
 const mycard6 = new Card(
     "Zenklub",
-    "../Image/recursos/none.png",
-    "Indefinido",
-    "miss_link"
+    "../Image/recursos/zenklub.png",
+    "É uma plataforma online que oferece terapia e coaching com profissionais de saúde mental licenciados. Eles têm uma equipe de psicólogos, psiquiatras, coaches e terapeutas de casal disponíveis para ajudar, e você pode escolher o profissional que melhor se adequa às suas necessidades.",
+    "https://zenklub.com.br/"
 )
 
 // CardContainer 3
 
 const mycard7 = new Card(
-    "Default",
-    "../Image/recursos/none.png",
-    "Indefinido",
-    "miss_link"
+    "Wearables (Dispositivos Vestíveis)",
+    "../Image/recursos/wearables.png",
+    "Alguns dispositivos vestíveis, como smartwatches e pulseiras de fitness, têm recursos para monitorar o sono, o nível de atividade e até mesmo o estresse.",
+    "https://www.google.com/search?sca_esv=ee5823111fbad417&sca_upv=1&q=wearables&tbm=shop&source=lnms&prmd=sivnmbtz&ved=1t:200715&ictx=111&biw=1920&bih=953&dpr=1"
 )
 
 const mycard8 = new Card(
-    "Default",
-    "../Image/recursos/none.png",
-    "Indefinido",
-    "miss_link"
+    "Happify",
+    "../Image/recursos/happify.png",
+    "Uma plataforma que oferece jogos, atividades e exercícios baseados na ciência da felicidade e do bem-estar emocional, projetados para ajudar os usuários a desenvolver habilidades de resiliência e melhorar o humor.",
+    "https://www.happify.com/"
 )
 
 const mycard9 = new Card(
-    "Default",
-    "../Image/recursos/none.png",
-    "Indefinido",
-    "miss_link"
+    "Affectiva",
+    "../Image/recursos/affectiva.png",
+    "Além do reconhecimento facial, também oferece tecnologia para analisar emoções na voz, identificando nuances emocionais e padrões de fala.",
+    "https://www.affectiva.com/"
 )
 
 //CardContainer 4
 
 const mycard10 = new Card(
-    "Default",
-    "../Image/recursos/none.png",
-    "Indefinido",
-    "miss_link"
+    "Ministério da Saúde - Saúde Mental",
+    "../Image/recursos/ministeriosaude.png",
+    "O Ministério da Saúde do Brasil disponibiliza informações e materiais educativos sobre saúde mental em seu site, incluindo diretrizes e políticas públicas relacionadas ao tema.",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-mental"
 )
 
 const mycard11 = new Card(
-    "Default",
-    "../Image/recursos/none.png",
-    "Indefinido",
-    "miss_link"
+    "Hospital Israelita Albert Einstein",
+    "../Image/recursos/albert.png",
+    "O hospital Albert Einstein também tem parte na causa da saúde mental. Na página “Saúde Mental Einstein”, você pode encontrar diversas informações sobre o assunto.",
+    "https://www.einstein.br/saudemental"
 )
 
 const mycard12 = new Card(
-    "Default",
-    "../Image/recursos/none.png",
-    "Indefinido",
-    "miss_link"
+    "Psychology Today",
+    "../Image/recursos/psychology.png",
+    "É uma plataforma online que oferece uma variedade de recursos relacionados à psicologia, saúde mental e bem-estar emocional. Fundada em 1967, a Psychology Today é uma das principais fontes de informações sobre psicologia e comportamento humano. Seu site oferece uma ampla gama de recursos e conteúdos úteis para profissionais de saúde mental, estudantes, pesquisadores e o público em geral.",
+    "https://www.psychologytoday.com/us"
 )
 
 
@@ -132,7 +132,17 @@ container.appendChild(mycard3.render());
 var container = document.getElementById('cardContainer2');
 container.appendChild(mycard4.render());
 container.appendChild(mycard5.render());
-container.appendChild(mycard2.render());
+container.appendChild(mycard6.render());
+
+var container = document.getElementById('cardContainer3');
+container.appendChild(mycard7.render());
+container.appendChild(mycard8.render());
+container.appendChild(mycard9.render());
+
+var container = document.getElementById('cardContainer4');
+container.appendChild(mycard10.render());
+container.appendChild(mycard11.render());
+container.appendChild(mycard12.render());
 
 
 function togglePanel(containerId, item) {
