@@ -23,7 +23,40 @@ main{
 
   
 }
+#mini-cards img{
+  width: 100px;
+  height: 50px;
+ 
+ 
+ 
+}
+#cards-section{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
 
+}
+#card-image{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap : 10px;
+  
+}
+#card-description{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: space-around;
+  width: 100%;
+  font-size: 10px;
+}
+#card-description  h2,h3,h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+
+
+}
 .card {
     display: flex;
     flex-direction: column;
@@ -72,37 +105,3 @@ h1, h2 {
     font-size: 40px;
 }
     
-  .botoes button{
-    margin-bottom: 10px;
-    padding: 10px 20px; 
-    background-color: #add8e6; 
-    color: #0a0101; 
-    border: 2px solid  #90ee90;
-    border-radius: 30px;
-    font-size: 16px; 
-    cursor: pointer; 
-    font-family: 'Montserrat', sans-serif;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
-
-  }
-.botoes button:hover{
-  background-color: #90ee90; 
-}
-
-.more button{
-
-  display: flex;
-  align-self: flex-end;
-  margin-top: 30px;
-  background-color: #90ee90;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 15px;
-  font-family: 'Montserrat', sans-serif; 
-  padding: 14px;       
-
-
-}
-.more a{
-  text-decoration: none;
-}

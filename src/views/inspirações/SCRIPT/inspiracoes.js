@@ -26,29 +26,55 @@ function createArtista(inspiration) {
     inspirationArray.push(inspiration);
 }
 function showMiniCard(){
-   const cards = document.getElementById("mini-cards");
-   const cardsSection = document.getElementById("cards-section");
-   const miniCardIndex = miniCardsArray[index];
-   cards.style.display = "block";
+        const divImage = document.getElementById("card-image");
+        const divDescription = document.getElementById("card-description");
+        
+        divImage.innerHTML = '';
+        divDescription.innerHTML = '';
+     
+        miniCardsArray.forEach(miniCardIndex => {
+             const miniCardImg = document.createElement('img');
+             const miniCardTitle = document.createElement('h2');
+             const miniCardSubTitle = document.createElement('h3');
+             const miniCardName = document.createElement('h5');
+     
+             miniCardImg.src = miniCardIndex.image;
+             miniCardTitle.innerText = miniCardIndex.title;
+             miniCardSubTitle.innerText = miniCardIndex.subtitle;
+             miniCardName.innerText = miniCardIndex.name;
+     
+             divImage.appendChild(miniCardImg);
+             divDescription.appendChild(miniCardTitle);
+             divDescription.appendChild(miniCardSubTitle);
+             divDescription.appendChild(miniCardName);
 
-const miniCardImg = document.createElement('img');
-const miniCardTitle = document.createElement('h1');
-const miniCardSubTitle = document.createElement('h2');
-const miniCardName = document.createElement('h4');
 
 
-miniCardImg.src = miniCardIndex.image;
-miniCardTitle.innerText = miniCardIndex.title;
-miniCardSubTitle.innerText = miniCardIndex.subtitle;
-miniCardName.innerText = miniCardIndex.name;
+          
+miniCardImg.addEventListener('click', function() {
+    const miniCards = document.getElementById("mini-cards");
+    miniCards.style.display = "none";
+    
+    showInspiration();
+});
 
 
-cardsSection.appendChild(miniCardImg);
-cardsSection.appendChild(miniCardTitle);
-cardsSection.appendChild(miniCardSubTitle);
-cardsSection.appendChild(miniCardName);
-}
+miniCardName.addEventListener('click', function() {
+    const miniCards = document.getElementById("mini-cards");
+    miniCards.style.display = "none"; 
+    
+    showInspiration();
+});
 
+        });
+
+
+
+        
+     }
+     
+
+    
 function closeMiniCard(){
     const cards = document.getElementById("mini-cards");
     cards.style.display = "none";
@@ -74,23 +100,6 @@ function showInspiration() {
     divCards.appendChild(descriptionInspiraction);
 }
 
-function nextInspiration() {
-    index++;
-    if (index >= inspirationArray.length) {
-        index = 0; 
-    }
-    showInspiration();
-}
-
-function previousInspiration() {
-    index--;
-    if (index < 0) {
-        index = inspirationArray.length - 1; 
-    }
-    showInspiration();
-}
-
-
 const lizzie = new Inspiration(
     "Lizzie Velasquez",
     "../Image/LizzieVelasquez.png",
@@ -110,10 +119,31 @@ createArtista(lizzie);
 const lizzieCard = new MiniCard(
     
     "../Image/LizzieVelasquez.png",
-    "uma hirtoria de autoestima",
-    "conheça a nossa historia",
+    "Superando a ansiedade",
+    "Uma história de resiliencia e autocuidado",
     "Lizzie Velasquez",
 );
 
+const lizzieCard2 = new MiniCard(
+    
+    "../Image/LizzieVelasquez.png",
+    "Superando a ansiedade",
+    "Uma história de resiliencia autocuidado",
+    "Lizzie Velasquez",
+);
+
+const lizzieCard3 = new MiniCard(
+    
+    "../Image/LizzieVelasquez.png",
+    "Superando a ansiedade",
+    "Uma história de resiliencia autocuidado",
+    "Lizzie Velasquez",
+);
+
+
+
 creatMiniCard(lizzieCard);
+creatMiniCard(lizzieCard2);
+creatMiniCard(lizzieCard3);
+
 showMiniCard();
