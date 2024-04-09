@@ -1,23 +1,182 @@
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto 15px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 20px; 
+}
+
+.img-info {
+    flex: 0 0 calc(25% - 5px);
+    margin-top: 40px;
+    margin-right: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cvv-info {
+    flex: 0 0 65%;
+    margin-left: 100px;
+}
+
+.sus-logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.sus-logo:hover {
+    opacity: 0.8; 
+}
+
+.img-info p{
+    font-size: 26px;
+    font-weight: bold;
+    color:#00bbf4;
+}
+
+.sus-logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.cvv-logo {
+    max-width: 140px;
+    margin-bottom: 10px;
+}
+
+.public-info {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    margin-right: 0;
+    max-width: 600px;
+}
+
+.public-info p {
+    width: 100%;
+    max-width: 100%;
+    text-align: justify;
+}
+
+.public-info p {
+    font-size: 16px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f17894;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; 
+}
+
+.button:hover {
+    background-color: #90ee90;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #133551;
+}
+
+.text {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.predef {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+.caption{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #133551;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.filter, .search {
+    display: flex;
+    align-items: center;
+}
+
+.filter label, .search label {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333; /* Cor do texto */
+}
+
+.filter select, .search input {
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.filter select {
+    background-color: #f8f8f8; /* Cor de fundo */
+}
+
+.search input {
+    width: 200px; /* Largura do campo de entrada */
+}
+
+.search input::placeholder {
+    color: #999; /* Cor do texto de espaço reservado */
+}
+
+.filter select:focus, .search input:focus {
+    border-color: #f17894; /* Cor da borda ao focar */
+    box-shadow: 0 0 5px rgba(144, 238, 144, 0.5); /* Sombra ao focar */
+}
 
 .card {
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 15px;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
     background-color: #fff;
-    width: calc(25% - 20px);
     margin-right: 20px;
     float: left;
-    height: 200px;
+    width: calc(50% - 20px);
+    height: 320px;
     overflow: hidden;
     box-sizing: border-box;
+    border-radius: 25px;
 }
 
-
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
+#institutions::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 footer {
@@ -30,31 +189,62 @@ footer {
     width: 100%;
 }
 
-.text, .title, .contact-list{
-    padding: 10px;
+.slide-content{
+    margin: 0 40px;
 }
 
-.contact-list{
+.card-content{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-}
-
-.contact-list li {
-    display: block;
-    margin-bottom: 8px;
-}
-
-h2{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 42;
+    justify-content: center; 
+    padding: 10px 14px;
 }
 
-#institutions::after {
-    content: "";
-    display: table;
-    clear: both;
+.card-content img {
+    max-width: 20%;
+    max-height: 20%;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.region, .type, .description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.button{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #f17894;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.button:hover{
+    background-color: #90ee90;
+}
+
+.view-more {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.view-more:hover {
+    background-color: #90ee90;
+}
+
+.slide-container{
+    margin-bottom: 70px;
 }
