@@ -80,7 +80,7 @@ main{
 
  .image-inspiration img{
     width:600px;
-     height:500px;
+     height:auto;
      align-content: center;
      align-items: center;
 }
