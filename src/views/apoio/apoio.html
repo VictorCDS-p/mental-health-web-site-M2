@@ -26,28 +26,52 @@
         </div>
     </header>
 
-    <div class="container">
+    <div class="main-container">
         <h2 class="title">Contato e Apoio</h2>
-        <p class="text">Se você ou alguém que você conhece está passando por uma crise, saiba que existem recursos disponíveis para oferecer apoio e atendimento.</p>
-        <ul class="contact-list">
-            <li><strong>Busque ajuda na sua UBS local ou Centro de Atenção Psicossocial (CAPS):</strong></li>
-            <li><a href="https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/caps">Mais informações aqui</a></li>
-            <li><strong>Centro de Valorização da Vida:</strong> <a href="tel:188">Disque 188</a></li>
-        </ul>
-        <p>Além dos serviços da rede pública, existem outras instituições que oferecem apoio em saúde mental com valores acessíveis ou próximos a gratuidade. Consulte aqui algumas organizações e canais de atendimento:</p>
-        
-        <div id="filters">
-            <label for="type-filter">Filtrar por:</label>
-            <select id="type-filter">
-                <option value="all">Todos</option>
-                <option value="online">Online</option>
-                <option value="presencial">Presencial</option>
-            </select>
-            <label for="region-search">Buscar região:</label>
-            <input type="text" id="region-search" placeholder="Digite a região...">
+        <div class="container">
+            <div class="img-info">
+                <a href="https://www.saude.gov.br/">
+                    <img class="sus-logo" src="./img/meu-sus.png" alt="SUS Logo">
+                </a>
+                <div class="cvv-info">
+                    <img class="cvv-logo" src="./img/cvv.png" alt="CVV Logo">
+                    <p>Disque 188</p>
+                </div>
+            </div>
+            
+            <div class="public-info">
+                <p class="text">Se você ou alguém que você conhece está passando por uma crise, saiba que existem recursos disponíveis para oferecer apoio e atendimento. É importante buscar ajuda profissional para lidar com crises de saúde mental. Isso pode incluir psicoterapia, medicamentos prescritos por um profissional de saúde mental, grupos de apoio ou serviços de emergência. </p>
+                <p class="text">Não hesite em contatar linhas diretas de apoio, como o Centro de Valorização da Vida, ou procurar a sua Unidade Básica de Saúde (UBS) e o Centro de Atenção Psicossocial (CAPS) local para obter orientação e suporte.</p>
+                <p class="text">Lembre-se de que você não está sozinho e há pessoas dispostas a ajudar você a superar momentos difíceis</p>
+                <a href="https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/caps" class="button">Mais informações aqui</a>
+            </div>
         </div>
-
-        <div id="institutions"></div>
+        
+        <div class="predef">
+            <p class="caption">Além dos serviços da rede pública, existem outras instituições que oferecem apoio em saúde mental com valores acessíveis ou próximos a gratuidade.<br> Consulte aqui algumas organizações e canais de atendimento:</p>
+        </div>
+        
+        <div class="filter-container">
+            <div class="filter">
+                <label class="filter" for="type-filter">Filtrar por:</label>
+                <select id="type-filter">
+                    <option value="all">Todos</option>
+                    <option value="online">Online</option>
+                    <option value="presencial">Presencial</option>
+                </select>
+            </div>
+            
+            <div class="search">
+                <label for="region-search">Buscar região:</label>
+                <input type="text" id="region-search" placeholder="Digite a região...">
+            </div>
+            
+        </div>
+        
+        <div class="slide-container">
+            <div class="slide-content" id="slider">
+            </div>
+        </div>
     </div>
     
     <footer>
