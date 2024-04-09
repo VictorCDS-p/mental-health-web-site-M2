@@ -22,6 +22,7 @@ body{
 
 
 
+
 /* Estilo cabeçalho */
 
 header{
@@ -42,7 +43,7 @@ header a{
 
 header a:hover{
     display: inline-block;
-    color: #ffffcc;
+    color: #133551;
     transform: scale(1.05);
 }
 
@@ -59,18 +60,44 @@ header nav ul li{
     max-width: 150px;
 }
 
+.mentalHealth p {
+    font-size: 16px;
+}
+
+.mentalHealth h1 {
+    font-size: 28px;
+    color: #133551;
+}
+
+.mentalHealth h5, h3 {
+    color: #133551;
+}
+
 
 
 .welcome{
     padding: 40px;
-    padding-bottom: 200px;
+    padding-bottom: 60px;
     display: flex;
     align-items: center;
+    flex-direction: row;
+}
+
+.welcomeDiv{
+    display: flex;
     flex-direction: column;
+}
+
+.welcomeDiv{
+    position: relative;
 }
 
 .welcome h1{
     padding-bottom: 20px;
+}
+
+.welcome img{
+    max-width: 500px;
 }
 
 .text{
@@ -79,11 +106,12 @@ header nav ul li{
     
 }
 
-.text2{
+.text2 {
     padding: 40px;
     text-align: right;
-    
-}
+  }
+
+
 
 .content h1{
     padding-bottom: 20px;
@@ -129,18 +157,22 @@ header nav ul li{
 
 }
 
-.resourcesTitle button{
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
-    color: #ffffff;
-    font-size: 20px;
-    background: #000000;
-    padding: 10px 20px 10px 20px;
+.mentalHealth button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f17894;
+    color: #fff;
     text-decoration: none;
-    max-height: 120px;
+    border-radius: 5px;
+    margin-top: 20px; 
     cursor: pointer;
 }
+
+.mentalHealth button:hover{
+    background-color: #90ee90;
+
+}
+
 
 
 
@@ -154,12 +186,45 @@ header nav ul li{
 
 
 .cardImg {
-    border: 3px solid rgba(247, 247, 247, 0.54);
+    border: 3px solid #133551;
+    background-color: white;
     border-bottom: none; 
 }
 
 .cardContent {
-    border: 3px solid rgba(247, 247, 247, 0.54);
-    border-top: none; 
+    border: 3px solid #133551;
+    /* border-top: none; */
 }
 
+.inspirations{
+    display: flex;
+    justify-content: space-around;
+}
+
+.inspirationsContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inspirationsCard img{
+    max-width: 150px;
+}
+
+.inspirationsCard{
+    display: flex;
+    border: 3px solid #133551;
+}
+
+.inspirationsCardContent{
+    padding: 18px;
+    padding-bottom: 10px;
+}
+
+.inspirationsCardContent, h3, p, h5{
+    padding-bottom: 10px;
+}
+
+.inspirationsContent a {
+    text-align: center;
+  }
