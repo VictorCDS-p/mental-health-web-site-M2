@@ -115,3 +115,51 @@ header nav ul li{
     font-style: italic;
 }
 
+
+.resources{
+    padding: 40px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.resourcesTitle, h1, p {
+    padding-bottom: 15px;
+
+
+}
+
+.resourcesTitle button{
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #000000;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    max-height: 120px;
+}
+
+
+
+.resourcesCard{
+    gap: 20px;
+    display: flex;
+    text-align: center;
+
+}
+
+
+
+.cardImg {
+    border: 3px solid rgba(247, 247, 247, 0.54);
+    border-bottom: none; 
+}
+
+.cardContent {
+    border: 3px solid rgba(247, 247, 247, 0.54);
+    border-top: none; 
+}
+
