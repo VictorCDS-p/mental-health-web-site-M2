@@ -1,0 +1,124 @@
+@media screen and (max-width: 768px) {
+  .container-all {
+    padding: 0 20px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-all {
+    font-size: 15px;
+  }
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 0 20px;
+    font-size: 24px;
+}
+
+.resources p {
+    margin-top: 50px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+
+}
+
+
+.index {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+.arrowdown {
+    padding-left: 50px;
+    background-image: url('../../Image/seta-para-baixo.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 15px 15px;
+    line-height: 20px;
+    
+}
+
+.arrowup {
+    padding-left: 50px;
+    background-image: url('../../Image/seta-para-cima.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 15px 15px;
+    line-height: 20px;
+}
+
+.content {
+    flex: 1 1 300px;
+    margin: 20px;
+    margin-left: 0px;
+}
+
+.content li {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+
+.title-index {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    margin: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin-bottom: 10px;
+  }
+  
+  .card button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .panel-link:hover {
+    color: blue; 
+    text-decoration: underline; 
+    cursor: pointer; 
+  }
+  
+  .cardContainer {
+    display: none;
+  }
+

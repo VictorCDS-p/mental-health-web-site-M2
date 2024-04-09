@@ -8,39 +8,68 @@
     <link rel="stylesheet" href="./CSS/recursos.css">
 </head>
 <body>
- <header>
-        <div class="interface">
-            <div id="logo">
-                <a href="../../../index.html">
+    <div class="container-all">
+ 
+        <header>
+            <div class="interface">
+                <div id="logo">
+                    <a href="../../../index.html">
 
-                    <img src="../Image/logo.png" alt="Logo" > 
-                </a>
+                        <img src="../Image/logo.png" alt="Logo" > 
+                    </a>
+                </div>
+                    <nav class="menu-desktop">
+                        <ul>
+                            <li><a href="../../../index.html">Início</a></li>
+                            <li><a href="../recursos/recursos.html">Recursos</a></li>
+                            <li><a href="../inspirações/inspiracao.html">Inspirações</a></li>
+                            <li><a href="../apoio/apoio.html">Apoio</a></li>
+                        </ul>
+                
+                    </nav>
             </div>
-                <nav class="menu-desktop">
-                    <ul>
-                        <li><a href="../../../index.html">Início</a></li>
-                        <li><a href="../recursos/recursos.html">Recursos</a></li>
-                        <li><a href="../inspirações/inspiracao.html">Inspirações</a></li>
-                        <li><a href="../apoio/apoio.html">Apoio</a></li>
-                    </ul>
-               
-                </nav>
+
+        </header>
+
+        <div class="container">
+            <h1>Recursos e Ferramentas</h1>
+            
+            <div class="resources">
+                <p>Quando a saúde mental não vai bem, existem diversos recursos online que podem auxiliar a amenizar os sintomas. É o que iremos apresentar aqui:</p>
             </div>
-    </header>
+        </div>
 
-
-
-
-
-
-
-
-
-
+        <div class="index">
+            <div>
+                <h2 class="title-index">Categorias</h2>
+                <ul class="content">
+                    <strong>
+                        <li id="item1" class="arrowdown"><a class="panel-link" onclick="togglePanel('cardContainer1','item1')">Aplicativos de Meditação e Mindfulness</a></li>
+                    </strong>
+                    <div id="cardContainer1" class="cardContainer"></div>
+                    
+                    <strong>
+                        <li id="item2" class="arrowdown"><a class="panel-link" onclick="togglePanel('cardContainer2','item2')">Plataformas Online de Terapia e Aconselhamento</a></li>
+                    </strong>
+                    <div id="cardContainer2" class="cardContainer"></div>
+                    
+                    <strong>
+                        <li id="item3" class="arrowdown"><a class="panel-link" onclick="togglePanel('cardContainer3','item3')">Tecnologia de Rastreamento e Monitoramento</a></li>
+                    </strong>
+                    <div id="cardContainer3" class="cardContainer"></div>
+                    
+                    <strong>
+                        <li id="item4" class="arrowdown"><a class="panel-link" onclick="togglePanel('cardContainer4','item4')">Plataformas de Educação e Informação</a></li>
+                    </strong>
+                    <div id="cardContainer4" class="cardContainer"></div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
 
 
 
 <script src="../recursos/SCRIPT/recursos.js"></script>
-<script src="./SCRIPT/recursos.js"></script>
 </body>
 </html>

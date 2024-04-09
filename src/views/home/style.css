@@ -13,9 +13,10 @@
 }
 
 body{
-    background: linear-gradient(90deg, rgba(173,216,230,1) 0%, rgba(255,255,255,1) 53%, rgba(173,216,230,1) 100%);
+    background: linear-gradient(90deg, rgba(173,216,230,1) 0%, rgba(198,221,226,1) 100%);
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -60,22 +61,105 @@ header nav ul li{
 
 
 
-/* .mental-health{
+.welcome{
+    padding: 40px;
+    padding-bottom: 200px;
     display: flex;
-    text-align:justify;
-    flex-direction:column;
-    padding: 5px 4px;
-    gap: 10px;
-    margin: 20px;
-    /* background-color: #ffffff; */
-    /* max-width: 950px; */
-
-/* }
-.mental-health article{
-    max-width: 50%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    align-items: center;
+    flex-direction: column;
 }
-.mental-health h3{
-    font-size: 28px;
-} */ 
+
+.welcome h1{
+    padding-bottom: 20px;
+}
+
+.text{
+    padding: 40px;
+    text-align: left;
+    
+}
+
+.text2{
+    padding: 40px;
+    text-align: right;
+    
+}
+
+.content h1{
+    padding-bottom: 20px;
+}
+
+.mentalImg img{
+    display: block; 
+    margin: 0 auto;
+    max-width: 500px;
+
+}
+
+.mentalImg h1{
+    display: block; 
+    margin: 0 auto;
+}
+
+.content .phrase{
+    padding: 40px;
+    text-align: end;
+}
+
+.content .phrase2{
+    padding: 40px;
+    text-align: start;
+}
+
+.content span{
+    font-style: italic;
+}
+
+
+.resources{
+    padding: 40px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.resourcesTitle, h1, p {
+    padding-bottom: 15px;
+
+
+}
+
+.resourcesTitle button{
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 20px;
+    background: #000000;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    max-height: 120px;
+    cursor: pointer;
+}
+
+
+
+.resourcesCard{
+    gap: 20px;
+    display: flex;
+    text-align: center;
+
+}
+
+
+
+.cardImg {
+    border: 3px solid rgba(247, 247, 247, 0.54);
+    border-bottom: none; 
+}
+
+.cardContent {
+    border: 3px solid rgba(247, 247, 247, 0.54);
+    border-top: none; 
+}
+
