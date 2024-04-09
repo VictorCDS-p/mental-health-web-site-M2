@@ -191,9 +191,12 @@ header nav ul li{
     border-bottom: none; 
 }
 
+.card1:hover, .card2:hover  {
+    box-shadow: 0px 0px 10px 3px rgba(19, 53, 81, 0.5); 
+  }
+
 .cardContent {
     border: 3px solid #133551;
-    /* border-top: none; */
 }
 
 .inspirations{
@@ -214,6 +217,11 @@ header nav ul li{
 .inspirationsCard{
     display: flex;
     border: 3px solid #133551;
+}
+
+.inspirationsCard:hover{
+    box-shadow: 0px 0px 10px 3px rgba(19, 53, 81, 0.5); 
+
 }
 
 .inspirationsCardContent{
