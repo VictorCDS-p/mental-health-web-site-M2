@@ -16,6 +16,7 @@ body{
     background: linear-gradient(90deg, rgba(173,216,230,1) 0%, rgba(198,221,226,1) 100%);
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -72,9 +73,15 @@ header nav ul li{
     padding-bottom: 20px;
 }
 
-.content{
+.text{
     padding: 40px;
     text-align: left;
+    
+}
+
+.text2{
+    padding: 40px;
+    text-align: right;
     
 }
 
@@ -89,9 +96,19 @@ header nav ul li{
 
 }
 
+.mentalImg h1{
+    display: block; 
+    margin: 0 auto;
+}
+
 .content .phrase{
     padding: 40px;
     text-align: end;
+}
+
+.content .phrase2{
+    padding: 40px;
+    text-align: start;
 }
 
 .content span{
