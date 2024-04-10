@@ -1,88 +1,6 @@
 .main-container {
     max-width: 1200px;
-    margin: 0 auto 15px;
-}
-
-.container {
-    display: flex;
-    align-items: flex-start; 
-    margin-bottom: 20px; 
-}
-
-.img-info {
-    flex: 0 0 calc(25% - 5px);
-    margin-top: 40px;
-    margin-right: 20px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.cvv-info {
-    flex: 0 0 65%;
-    margin-left: 100px;
-}
-
-.sus-logo {
-    max-width: 150px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-.sus-logo:hover {
-    opacity: 0.8; 
-}
-
-.img-info p{
-    font-size: 26px;
-    font-weight: bold;
-    color:#00bbf4;
-}
-
-.sus-logo {
-    max-width: 150px;
-    margin-bottom: 10px;
-}
-
-.cvv-logo {
-    max-width: 140px;
-    margin-bottom: 10px;
-}
-
-.public-info {
-    flex: 0 0 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 120px;
-    margin-right: 0;
-    max-width: 600px;
-}
-
-.public-info p {
-    width: 100%;
-    max-width: 100%;
-    text-align: justify;
-}
-
-.public-info p {
-    font-size: 16px;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #f17894;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px; 
-}
-
-.button:hover {
-    background-color: #90ee90;
+    margin: 0 auto;
 }
 
 .title {
@@ -92,19 +10,93 @@
     color: #133551;
 }
 
-.text {
-    text-align: justify;
-    margin-bottom: 20px;
+.info-container {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 5%;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    
 }
 
-.predef {
+.info {
+    margin-top: 40px;
+    margin-right: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: calc(50% - 20px);
+}
+
+.info p{
+    font-size: 18px;
+    font-weight: bold;
+    color:#00bbf4;
+}
+
+.sus-logo {
+    max-width: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.sus-logo:hover {
+    opacity: 0.8; 
+}
+
+.cvv-info {
+    flex: 0 0 50%;
+}
+
+.cvv-logo {
+    max-width:30%;
+    margin-bottom: 5px;
+}
+
+.public-info {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 0;
+    max-width: 600px;
+}
+
+.public-info p {
+    width: 100%;
+    max-width: 100%;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.more-info-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f17894;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; 
+}
+
+.more-info-button:hover {
+    background-color: #90ee90;
+}
+
+.text {
+    text-align: justify;
+}
+
+.options {
     margin-top: 50px;
     margin-bottom: 50px;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto; 
 }
-
 
 .caption{
     text-align: center;
@@ -158,67 +150,57 @@
     box-shadow: 0 0 5px rgba(144, 238, 144, 0.5);
 }
 
+.card-container {
+    margin-bottom: 70px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .card {
     border: 1px solid #ccc;
     border-radius: 10px;
     margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
     margin-right: 20px;
-    float: left;
-    width: calc(50% - 20px);
-    height: 320px;
+    background-color: #fff;
+    width: calc(50% - 40px);
+    height: auto;
     overflow: hidden;
     box-sizing: border-box;
     border-radius: 25px;
 }
 
-#institutions::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.slide-content{
+.card-content {
+    padding: 10px 14px;
     margin: 0 40px;
-}
-
-.card-content{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center; 
-    padding: 10px 14px;
 }
 
 .card-content img {
-    max-width: 20%;
-    max-height: 20%;
+    max-width: 25%;
+    max-height: 25%;
+    margin-bottom: 10px;
 }
 
-.name{
+.name {
     font-size: 18px;
     font-weight: 500;
     color: #333;
 }
 
-.region, .type, .description{
+.region, .type, .description {
     font-size: 14px;
     color: #707070;
     text-align: center;
 }
 
-.button{
+.button {
     border: none;
     font-size: 16px;
     color: #fff;
@@ -230,7 +212,7 @@ footer {
     transition: all 0.3 ease;
 }
 
-.button:hover{
+.button:hover {
     background-color: #90ee90;
 }
 
@@ -245,6 +227,55 @@ footer {
     background-color: #90ee90;
 }
 
-.slide-container{
-    margin-bottom: 70px;
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        padding: 0 10px;
+    }
+
+    .info {
+        flex-basis: calc(100% - 20px);
+    }
+
+    .sus-logo,
+    .cvv-logo {
+        margin-bottom: 10px;
+    }
+
+    .cvv-info {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .public-info {
+        flex-basis: calc(100% - 20px);
+    }
+
+    .filter-container {
+        flex-direction: column;
+    }
+
+    .filter, .search {
+        width: 100%;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .card {
+        width: calc(100% - 20px);
+        margin-right: 0;
+    }
 }

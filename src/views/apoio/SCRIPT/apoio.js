@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     ];
 
-    const slider = document.getElementById('slider');
+    const cards = document.getElementById('cards');
 
     function displayInstitutions(institutions) {
-        slider.innerHTML = '';
+        cards.innerHTML = '';
         institutions.forEach(function(institution) {
             const card = document.createElement('div');
             card.classList.add('card');
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
             imgUrl.setAttribute('src', institution.logo);
 
             console.log("Caminho da imagem:", institution.logo);
-            slider.appendChild(card);
+            cards.appendChild(card);
         });
     }
 
