@@ -105,13 +105,13 @@ function showInspiration(index) {
 
     modal.style.display = "block";
 
-    // Fechar o modal quando clicar no botão de fechar
+    
     const closeButton = document.getElementById("close");
     closeButton.onclick = function() {
         closeModal();
     };
 
-    // Fechar o modal quando clicar fora do modal
+ 
     window.onclick = function(event) {
         if (event.target == modal) {
             closeModal();
