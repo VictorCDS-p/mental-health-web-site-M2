@@ -17,7 +17,7 @@ Este é um projeto web voltado para o bem-estar mental, oferecendo recursos, ins
 
 ## Autor
 
-Este projeto foi desenvolvido por [Victor Cardoso](https://github.com/VictorCDS-p), [Gabriel Ramon](https://github.com/GabrielRER), [Raissa Santos](https://github.com/rah9678), [Stéphanie Cândido](https://github.com/ste-coding), [Caio Eduardo](https://github.com/Caioedumartins)
+Este projeto foi desenvolvido por [Victor Cardoso](https://github.com/VictorCDS-p), [Gabriel Ramon](https://github.com/GabrielRER), [Raissa Santos](https://github.com/rah9678), [Stéphanie Cândido](https://github.com/ste-coding) e [Caio Eduardo](https://github.com/Caioedumartins)
 
 ---
 
