@@ -69,7 +69,7 @@ header nav ul li{
     color: #133551;
 }
 
-.mentalHealth h5, h3 {
+.mentalHealth h5, h3, h4 {
     color: #133551;
 }
 
@@ -146,7 +146,7 @@ header nav ul li{
 
 .resources{
     padding: 40px;
-    padding-top: 80px;
+    margin-top: 150px;
     display: flex;
     justify-content: space-around;
 }
@@ -183,12 +183,23 @@ header nav ul li{
 
 }
 
-
+.card1,
+.card2 {
+  width: 100%; 
+}
 
 .cardImg {
     border: 3px solid #133551;
     background-color: white;
-    border-bottom: none; 
+    border-bottom: none;
+
+
+}
+
+.cardImg img{
+    height: 200px; 
+    width: 184px;
+
 }
 
 .card1:hover, .card2:hover  {
@@ -202,6 +213,8 @@ header nav ul li{
 .inspirations{
     display: flex;
     justify-content: space-around;
+    margin-top: 150px;
+
 }
 
 .inspirationsContent{
@@ -236,3 +249,52 @@ header nav ul li{
 .inspirationsContent a {
     text-align: center;
   }
+
+
+.suport{
+    margin: 150px;
+    padding: 20px;
+    display: flex;
+    justify-content:  space-around;
+}
+
+.help{
+    text-align: center;
+    
+    
+}
+
+.help p, h4{
+    padding-top: 20px;    
+}
+
+.help i{
+    font-size: 30px;
+    color: #133551;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #133551; 
+    border-radius: 5px; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #add8e6; 
+}
