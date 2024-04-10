@@ -6,92 +6,119 @@ class Inspiration {
     }
 }
 
-class MiniCard{
-    constructor(image,title,subtitle,name) {
+class MiniCard {
+    constructor(image, title, subtitle, name) {
         this.image = image;
         this.title = title;
-        this.subtitle =subtitle;
+        this.subtitle = subtitle;
         this.name = name;
-
     }
 }
-let miniCardsArray = [];
-let inspirationArray = []; 
-let index = 0; 
 
-function creatMiniCard(miniCard){
+let miniCardsArray = [];
+let inspirationArray = [];
+
+function createMiniCard(miniCard) {
     miniCardsArray.push(miniCard);
 }
-function createArtista(inspiration) {
+
+function createInspiration(inspiration) {
     inspirationArray.push(inspiration);
 }
-function showMiniCard(){
-        const divImage = document.getElementById("card-image");
-        const divDescription = document.getElementById("card-description");
-        
-        divImage.innerHTML = '';
-        divDescription.innerHTML = '';
-     
-        miniCardsArray.forEach(miniCardIndex => {
-            const sectionCards = document.getElementById("cards-section")
-             const miniCardImg = document.createElement('img');
-             const miniCardTitle = document.createElement('h2');
-             const miniCardSubTitle = document.createElement('h3');
-             const miniCardName = document.createElement('h5');
-     
-             miniCardImg.src = miniCardIndex.image;
-             miniCardTitle.innerText = miniCardIndex.title;
-             miniCardSubTitle.innerText = miniCardIndex.subtitle;
-             miniCardName.innerText = miniCardIndex.name;
-     
-             divImage.appendChild(miniCardImg);
-             divDescription.appendChild(miniCardTitle);
-             divDescription.appendChild(miniCardSubTitle);
-             divDescription.appendChild(miniCardName);
 
+function showMiniCards() {
+    const divImage = document.getElementById("card-image");
+    const divDescription = document.getElementById("card-description");
 
+    divImage.innerHTML = '';
+    divDescription.innerHTML = '';
 
-          
-            sectionCards.addEventListener('click', function() {
-            const miniCards = document.getElementById("mini-cards");
-            miniCards.style.display = "none";
-    
-            showInspiration();});
+    miniCardsArray.forEach((miniCard, index) => {
+        const miniCardContainer = document.createElement('div');
+        miniCardContainer.classList.add('mini-card');
+        miniCardContainer.classList.add('bordered');
+
+        const miniCardContent = document.createElement('div');
+        miniCardContent.classList.add('mini-card-content');
+
+        const miniCardImg = document.createElement('img');
+        miniCardImg.src = miniCard.image;
+
+        const miniCardTitle = document.createElement('h2');
+        miniCardTitle.textContent = miniCard.title;
+
+        const miniCardSubtitle = document.createElement('h3');
+        miniCardSubtitle.textContent = miniCard.subtitle;
+
+        miniCardContent.appendChild(miniCardTitle);
+        miniCardContent.appendChild(miniCardSubtitle);
+
+        miniCardContainer.appendChild(miniCardImg);
+        miniCardContainer.appendChild(miniCardContent);
+
+        divImage.appendChild(miniCardContainer);
+
+        miniCardContainer.addEventListener('click', function() {
+            showInspiration(index);
         });
- }
-     
-
-    
-function closeMiniCard(){
-    const cards = document.getElementById("mini-cards");
-    cards.style.display = "none";
- 
- }
- 
-function showInspiration() {
-    const divCards = document.getElementById('inspiration-card');
-    const inspirationsIndex = inspirationArray[index];
-    
-    divCards.innerHTML = ''; 
-    
-    const nameInpiration = document.createElement('h1');
-    const imageInspiration = document.createElement('img');
-    const descriptionInspiraction = document.createElement('article');
-
-    nameInpiration.innerText = inspirationsIndex.name;
-    imageInspiration.src = inspirationsIndex.image;
-    descriptionInspiraction.innerText = inspirationsIndex.description;
-
-    divCards.appendChild(nameInpiration);
-    divCards.appendChild(imageInspiration);
-    divCards.appendChild(descriptionInspiraction);
+    });
 }
 
-const lizzie = new Inspiration(
-    "Lizzie Velasquez",
-    "../Image/LizzieVelasquez.png",
-    'A norte-americana Lizzie Velasquez, conhecida como a mulher mais feia do mundo, é um dos mais belos exemplos de força de vontade.Lizzie nasceu com uma rara doença genética (ainda desconhecida) que impede o ganho de gordura corporal. Com menos de 30kg, a condição de Lizzie fez com que ficasse cega de um olho e desenvolvesse um frágil sistema imunitário.Alvo de cruéis ataques de bullying na escola e na internet (quando se tornou famosa com um vídeo que a intitulava “a mulher mais feia do mundo”), Lizzie enfrentou momentos de forte depressão.Mas, conhecida pela sua força e otimismo, Lizzie não se deixou abater e recuperou-se! A jovem usou a visibilidade negativa que atribuíram à sua imagem para iniciar uma campanha contra o cyberbullying ao redor de todo o mundo.'
-);
+function closeModal() {
+    const modal = document.getElementById("inspiration-modal");
+    modal.style.display = "none";
+    
+    // Limpar o conteúdo dentro do modal
+    const modalContent = document.querySelector(".modal-content");
+    modalContent.innerHTML = '';
+}
+
+function showInspiration(index) {
+
+    const divCards = document.getElementById('inspiration-card');
+    const inspirationsIndex = inspirationArray[index];
+
+    const title = document.getElementById('inspiration-title');
+    const image = document.getElementById('inspiration-image');
+
+    title.innerText = inspirationsIndex.name;
+    image.src = inspirationsIndex.image;
+
+    divCards.style.display = 'block';
+    const modal = document.getElementById("inspiration-modal");
+    const modalContent = document.querySelector(".modal-content");
+
+    const nameInpiration = document.createElement('h1');
+    nameInpiration.innerText = inspirationsIndex.name;
+
+    const imageInspiration = document.createElement('img');
+    imageInspiration.src = inspirationsIndex.image;
+
+    const descriptionInspiraction = document.createElement('article');
+    descriptionInspiraction.innerText = inspirationsIndex.description;
+
+    modalContent.innerHTML = '';
+    modalContent.appendChild(nameInpiration);
+    modalContent.appendChild(imageInspiration);
+    modalContent.appendChild(descriptionInspiraction);
+    
+
+    modal.style.display = "block";
+
+    // Fechar o modal quando clicar no botão de fechar
+    const closeButton = document.getElementById("close");
+    closeButton.onclick = function() {
+        closeModal();
+    };
+
+    // Fechar o modal quando clicar fora do modal
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            closeModal();
+        }
+    };
+}
+
 
 const luke = new Inspiration(
     "Luke Tyburski",
@@ -99,38 +126,86 @@ const luke = new Inspiration(
     "Luke enfrentou uma batalha interna contra transtornos mentais, incluindo compulsão alimentar, depressão e uma obsessão prejudicial por exercícios físicos. Apesar de orientar outros sobre saúde e bem-estar durante o dia, à noite ele lutava secretamente contra seus próprios demônios. Essa vida dupla o consumiu por anos, levando-o a extremos como desafios físicos intensos para evitar enfrentar sua verdadeira dor emocional. Após buscar ajuda profissional e compartilhar suas lutas com entes queridos, Luke encontrou uma saída do ciclo destrutivo. Hoje, ele compartilha sua história para inspirar outros a encontrarem sua própria força interna e buscar ajuda quando necessário, comprometendo-se com a causa da saúde mental na comunidade. Sua jornada é um lembrete poderoso de que é possível encontrar esperança e cura, mesmo nos momentos mais sombrios da vida."
 );
 
-createArtista(luke);
-createArtista(lizzie);
+const lizzie = new Inspiration(
+    "Lizzie Velasquez",
+    "../Image/LizzieVelasquez.png",
+    'A norte-americana Lizzie Velasquez, conhecida como a mulher mais feia do mundo, é um dos mais belos exemplos de força de vontade.Lizzie nasceu com uma rara doença genética (ainda desconhecida) que impede o ganho de gordura corporal. Com menos de 30kg, a condição de Lizzie fez com que ficasse cega de um olho e desenvolvesse um frágil sistema imunitário.Alvo de cruéis ataques de bullying na escola e na internet (quando se tornou famosa com um vídeo que a intitulava “a mulher mais feia do mundo”), Lizzie enfrentou momentos de forte depressão.Mas, conhecida pela sua força e otimismo, Lizzie não se deixou abater e recuperou-se! A jovem usou a visibilidade negativa que atribuíram à sua imagem para iniciar uma campanha contra o cyberbullying ao redor de todo o mundo.'
+);
+
+
+
+
+
+const miriam = new Inspiration(
+    "Miriam Machado",
+    "../Image/miriam.png.jpg",
+    'A professora Miriam Regina Machado, diagnosticada com transtorno bipolar, narra sua trajetória de superação em sua obra autobiográfica "A alma por trás do transtorno bipolar – Uma autobiografia em crônicas". Apesar dos desafios enfrentados, desde terapias de eletrochoque até internações em instituições psiquiátricas, Miriam não se deixou abater pelo estigma da doença mental. Após conhecer o professor universitário e psicólogo Daniel Goulart, Miriam encontrou apoio no Centro de Atenção Psicossocial de Taguatinga (CAPS), onde desenvolveu uma amizade e parceria que resultou na publicação do livro. A obra, escrita de maneira lúdica e com bom humor, destaca a importância de não reduzir a alma de uma pessoa a um simples diagnóstico, além de revelar avanços nas abordagens da saúde mental. Miriam compartilha momentos de poesia, reflexões sobre a vida como professora e demonstra sua convicção de que a vida é feita para ser vivida, inspirando outros a superar suas próprias adversidades.'
+);
+
+
+
+const filipe = new Inspiration(
+    "Filipe Rodrigues",
+    "../Image/filipe.png",
+    'Filipe Santos Rodrigues enfrentou a depressão após o término de seu relacionamento aos 26 anos. Inicialmente relutante em procurar ajuda, Filipe superou o preconceito e decidiu iniciar o tratamento, que incluiu terapia e medicamentos. Seu filho de três anos foi sua principal motivação para buscar ajuda e seguir em frente. Após um ano de terapia e seis meses de medicamentos, Filipe está livre da depressão e voltou à sua rotina, consciente de que momentos difíceis são inevitáveis, mas passageiros. Ele destaca a importância de buscar apoio e encoraja outros que estão enfrentando dificuldades a procurar ajuda o mais rápido possível, antes que a situação se agrave. Filipe enfatiza a importância de se abrir com os outros e não hesitar em buscar ajuda profissional ao perceber sinais de que algo não está certo.'
+);
+
+const noah = new Inspiration(
+    "Noah Faria",
+    "../Image/noah.png",
+    'Noah Faria, um garoto brasileiro e britânico de 8 anos, tem autismo e começou a compartilhar sua história em palestras em Londres, onde reside com sua mãe, Renata Formoso. Juntos, eles escreveram o livro infantil "The Fizzy Brain" (Mente Borbulhante), que aborda como é viver com autismo e Transtorno do Déficit de Atenção com Hiperatividade (TDAH). Noah descreveu sua mente como acelerada, o que ajudou no diagnóstico de sua condição. O livro, inspirado em rimas feitas durante uma caminhada, conta com ilustrações de Emi Webber, uma britânica também diagnosticada com TDAH e autismo na vida adulta. O sucesso do livro levou Noah a dar palestras em escolas, onde fala abertamente sobre sua condição e a importância do respeito às diferenças. Embora atualmente disponível apenas em inglês, uma campanha de financiamento coletivo foi lançada para lançar o livro em português, visando ampliar o alcance da mensagem de Noah no Brasil.'
+);
+
+createInspiration(lizzie);
+createInspiration(luke);
+createInspiration(miriam);
+createInspiration(filipe);
+createInspiration(noah);
+
 
 
 const lizzieCard = new MiniCard(
-    
     "../Image/LizzieVelasquez.png",
     "Superando a ansiedade",
-    "Uma história de resiliencia e autocuidado",
+    "Uma história de resiliência e autocuidado",
     "Lizzie Velasquez",
 );
 
-const lizzieCard2 = new MiniCard(
-    
-    "../Image/LizzieVelasquez.png",
-    "Superando a ansiedade",
-    "Uma história de resiliencia autocuidado",
-    "Lizzie Velasquez",
+const lukeCard = new MiniCard(
+    "../Image/luke.png",
+    "Encontrando a esperança",
+    "Uma jornada de superação pessoal",
+    "Luke Tyburski",
 );
 
-const lizzieCard3 = new MiniCard(
-    
-    "../Image/LizzieVelasquez.png",
-    "Superando a ansiedade",
-    "Uma história de resiliencia autocuidado",
-    "Lizzie Velasquez",
+const miriamCard = new MiniCard(
+    "../Image/miriam.png.jpg",
+    "Vencendo o estigma",
+    "Uma história de superação e parceria",
+    "Miriam Machado",
+);
+
+const filipeCard = new MiniCard(
+    "../Image/filipe.png",
+    "Lidando com a depressão",
+    "Uma jornada de busca por ajuda e recuperação",
+    "Filipe Rodrigues",
+);
+
+const noahCard = new MiniCard(
+    "../Image/noah.png",
+    "Superando o autismo",
+    "Uma inspiradora história de resiliência",
+    "Noah Faria",
 );
 
 
+createMiniCard(lizzieCard);
+createMiniCard(lukeCard);
 
-creatMiniCard(lizzieCard);
-creatMiniCard(lizzieCard2);
-creatMiniCard(lizzieCard3);
+createMiniCard(miriamCard);
 
-showMiniCard();
+createMiniCard(filipeCard);
+createMiniCard(noahCard)
+
+showMiniCards();

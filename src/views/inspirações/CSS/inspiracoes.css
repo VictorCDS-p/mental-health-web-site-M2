@@ -52,6 +52,7 @@ main{
   width: 100%;
   font-size: 10px;
   cursor: pointer;
+  
 }
 #card-description  h2,h3,h5 {
   font-family: 'Montserrat', sans-serif;
@@ -95,6 +96,11 @@ main{
     font-size: 20px;
 
 }
+.inspiration-card img{
+  width: 50%;
+  height: 50%;
+
+}
 .card{
   display:none;
 }
@@ -107,3 +113,61 @@ h1, h2 {
     font-size: 40px;
 }
     
+/* Estilos para o modal */
+/* Estilos para o modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 150px; /* Posição vertical ajustável conforme necessário */
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto;
+  width: 300px; /* Largura ajustável conforme necessário */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.modal-content img {
+  width: 100px;
+  height: 50px;
+  max-width: 100px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+
+#inspiration-modal {
+  max-height: calc(100vh - 150px); /* Altura máxima ajustável conforme necessário */
+  overflow-y: auto;
+}
+.bordered {
+  border: 2px solid #add8e6;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.mini-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px; /* Espaço entre a imagem e o conteúdo */
+  width: calc(100% - 90px); /* Ajusta para ocupar o espaço restante */
+}
+
+.mini-card-content h2,
+.mini-card-content h3 {
+  margin: 0;
+}

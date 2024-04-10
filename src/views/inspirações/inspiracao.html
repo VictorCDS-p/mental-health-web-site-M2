@@ -8,44 +8,50 @@
     <link rel="stylesheet" href="./CSS/inspiracoes.css">
 </head>
 <body>
- <header>
-        <div class="interface">
-            <div id="logo">
-                <a href="../../../index.html">
-
-                    <img src="../Image/logo.png" alt="Logo" > 
-                </a>
-            </div>
-                <nav class="menu-desktop">
-                    <ul>
-                        <li><a href="../../../index.html">Início</a></li>
-                        <li><a href="../recursos/recursos.html">Recursos</a></li>
-                        <li><a href="../inspirações/inspiracao.html">Inspirações</a></li>
-                        <li><a href="../apoio/apoio.html">Apoio</a></li>
-                    </ul>
-               
-                </nav>
-            </div>
-    </header>
-    <main>
-        <div class="content">
-            <div id="inspiration-card" class="inspiration-card"></div>
-            <div class="image-inspiration">
-                <img src="../Image/superaçao.png.jpg" alt="Inspiração">
-            </div>
-
-            <div id="mini-cards" class="mini-cards">
-                <h1>Historias de superação</h1>
-                <h4>Inspire-se com relatos emocionantes de pessoas que encontraram apoio</h4>
-                <section id="cards-section" class="cards-section">
-                    <div id="card-image" class="card-image"></div>
-                    <div id="card-description" class="card-description"></div>
-                </section>
+<header>
+    <div class="interface">
+        <div id="logo">
+            <a href="../../../index.html">
+                <img src="../Image/logo.png" alt="Logo"> 
+            </a>
+        </div>
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="../../../index.html">Início</a></li>
+                <li><a href="../recursos/recursos.html">Recursos</a></li>
+                <li><a href="../inspirações/inspiracao.html">Inspirações</a></li>
+                <li><a href="../apoio/apoio.html">Apoio</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="content">
+        <div id="inspiration-modal" class="modal">
+            <span id="close" class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div id="inspiration-card" class="inspiration-card">
+                    <h1 id="inspiration-title"></h1>
+                    <img id="inspiration-image" src="" alt="Inspiração">
+                </div>
             </div>
         </div>
-    </main>
+                
+        <div class="image-inspiration">
+            <img src="../Image/superaçao.png.jpg" alt="Inspiração">
+        </div>
+        <div id="mini-cards" class="mini-cards">
+            <h1>Historias de superação</h1>
+            <h4>Inspire-se com relatos emocionantes de pessoas que encontraram apoio</h4>
+            <section id="cards-section" class="cards-section">
+                <div id="card-image" class="card-image"></div>
+                <div id="card-description" class="card-description"></div>
+            </section>
+        </div>
+    </div>
+</main>
 
-    <script src="../../JS/script.js"></script>
-    <script src="./SCRIPT/inspiracoes.js"></script>
+<script src="../../JS/script.js"></script>
+<script src="./SCRIPT/inspiracoes.js"></script>
 </body>
 </html>
