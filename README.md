@@ -1,7 +1,5 @@
 # ProjetoFinal-M2
 
-Claro! Aqui está um exemplo de um README básico para seu projeto:
-
 Saúde Mental e Bem-Estar
 Este projeto é um refúgio online dedicado ao bem-estar mental. Ele oferece uma variedade de recursos, ferramentas e inspirações para nutrir a saúde mental e promover o autocuidado. O objetivo é fornecer um espaço acolhedor e uma comunidade de apoio para todos que buscam priorizar sua saúde mental.
 
