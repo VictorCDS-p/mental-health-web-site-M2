@@ -22,5 +22,3 @@ Este projeto foi desenvolvido por [Victor Cardoso](https://github.com/VictorCDS-
 ---
 
 **Nota:** As imagens utilizadas no projeto estão localizadas na pasta `src/views/Image`.
-
-**Aviso Legal:** Este projeto é apenas para fins educacionais e não deve substituir o aconselhamento médico profissional. Se você está enfrentando problemas de saúde mental, procure ajuda de um profissional qualificado.
