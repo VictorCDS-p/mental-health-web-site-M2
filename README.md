@@ -1,22 +1,30 @@
-# ProjetoFinal-M2
+# Saúde Mental e Bem-Estar
 
-Saúde Mental e Bem-Estar
-Este projeto é um refúgio online dedicado ao bem-estar mental. Ele oferece uma variedade de recursos, ferramentas e inspirações para nutrir a saúde mental e promover o autocuidado. O objetivo é fornecer um espaço acolhedor e uma comunidade de apoio para todos que buscam priorizar sua saúde mental.
+Este é um projeto web voltado para o bem-estar mental, oferecendo recursos, inspirações e apoio para cuidar da saúde mental. O projeto é dividido em várias seções:
 
-Conteúdo do Projeto
-O projeto consiste em quatro seções principais:
+## Páginas
 
-Página Inicial (Home): Apresenta uma introdução ao site, informações sobre saúde mental e bem-estar, recursos disponíveis e formas de obter ajuda.
+- **Início (`index.html`):** Apresenta uma breve descrição do projeto e destaca a importância da saúde mental, oferecendo um menu de navegação para outras seções.
+- **Recursos (`recursos.html`):** Apresenta diversos recursos online para auxiliar na melhoria da saúde mental, incluindo aplicativos de meditação, plataformas de terapia online e muito mais.
+- **Inspirações (`inspiracao.html`):** Apresenta histórias de superação e relatos inspiradores para motivar os visitantes.
+- **Apoio (`apoio.html`):** Fornece informações de contato e apoio para quem está passando por uma crise de saúde mental, incluindo links úteis e números de telefone.
 
-Recursos: Oferece uma variedade de recursos e ferramentas online para auxiliar na manutenção da saúde mental, incluindo aplicativos de meditação, plataformas de terapia online, entre outros.
+## Estrutura de Arquivos
 
-Inspirações: Apresenta histórias de superação e relatos emocionantes de indivíduos que encontraram apoio e força para superar desafios relacionados à saúde mental.
+- **HTML:** Os arquivos `.html` estão organizados em diferentes pastas dentro de `src/views`, cada um representando uma seção do site.
+- **CSS:** Os arquivos `.css` estão dentro das respectivas pastas de cada seção, mantendo a estilização separada e organizada.
+- **JavaScript:** Os arquivos `.js` estão dentro das pastas correspondentes, sendo utilizados para adicionar interatividade às páginas.
 
-Apoio: Fornece informações sobre como obter ajuda profissional, incluindo links para serviços de apoio, como o Centro de Valorização da Vida (CVV) e outros recursos disponíveis.
+## Como Contribuir
 
-Tecnologias Utilizadas
-O projeto utiliza as seguintes tecnologias:
+Se você deseja contribuir para este projeto, sinta-se à vontade para abrir problemas (issues) ou enviar solicitações de recebimento (pull requests) para correções, melhorias ou novos recursos.
 
-HTML5
-CSS3 (com o framework Bootstrap para estilos adicionais)
-JavaScript (para interatividade e dinamismo)
+## Autor
+
+Este projeto foi desenvolvido por [Seu Nome].
+
+---
+
+**Nota:** As imagens utilizadas no projeto estão localizadas na pasta `src/views/Image`.
+
+**Aviso Legal:** Este projeto é apenas para fins educacionais e não deve substituir o aconselhamento médico profissional. Se você está enfrentando problemas de saúde mental, procure ajuda de um profissional qualificado.
