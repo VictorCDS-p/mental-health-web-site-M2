@@ -15,13 +15,9 @@ Este é um projeto web voltado para o bem-estar mental, oferecendo recursos, ins
 - **CSS:** Os arquivos `.css` estão dentro das respectivas pastas de cada seção, mantendo a estilização separada e organizada.
 - **JavaScript:** Os arquivos `.js` estão dentro das pastas correspondentes, sendo utilizados para adicionar interatividade às páginas.
 
-## Como Contribuir
-
-Se você deseja contribuir para este projeto, sinta-se à vontade para abrir problemas (issues) ou enviar solicitações de recebimento (pull requests) para correções, melhorias ou novos recursos.
-
 ## Autor
 
-Este projeto foi desenvolvido por [Seu Nome].
+Este projeto foi desenvolvido por [Victor Cardoso](https://github.com/VictorCDS-p), [Gabriel Ramon](https://github.com/GabrielRER), [Raissa Santos](https://github.com/rah9678), [Stéphanie Cândido](https://github.com/ste-coding), [Caio Eduardo](https://github.com/Caioedumartins)
 
 ---
 
