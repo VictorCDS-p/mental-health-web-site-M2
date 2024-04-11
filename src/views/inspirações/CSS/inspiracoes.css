@@ -1,185 +1,57 @@
-
-
 body {
   margin: 0;
   background-color: #ffffff;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   height: 100vh;
-  
 }
 
-main{
+main {
   display: flex;
-  
 }
-
 
 .content {
   display: flex;
-  align-items:flex-start; 
+  align-items: flex-start; 
   gap: 30px;
-  margin-left: 100px;
-
-  
-}
- 
- 
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-   
-}
-.cards{
-  display: flex;
-  flex-direction: column;
-  gap:25px;
-  margin-left:5px;
-}
-.title{
-    display: flex;
-    align-items: center;
-
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
- .image-inspiration img{
-    width:600px;
-     height:auto;
-     align-content: center;
-     align-items: center;
-}
-.card article{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 10px;
-    font-family: 'Montserrat', sans-serif;
-    color: #080000;
-    font-size: 20px;
-
-}
-.inspiration-card img{
-  width: 50%;
-  height: 50%;
-
-}
-.card{
-  display:none;
+.image-inspiration img {
+  width: 600px;
+  height: auto;
+  align-content: center;
+  align-items: center;
 }
 
-
-
-
-h1, h2 {
-    color:  #133551; 
-    font-size: 30px;
-}
-    
-/* Estilos para o modal */
-/* Estilos para o modal */
-.modal {
-  display: none;
-  position: fixed;
-  top: 150px; /* Posição vertical ajustável conforme necessário */
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  overflow: auto;
-  width: 300px; /* Largura ajustável conforme necessário */
-}
-
-.modal-content {
-  background-color: #fefefe;
-  padding: 20px;
-  width: 100%;
+.inspiration-card img {
+  width: 200px;
   height: auto;
 }
 
-.modal-content img {
-  width: 100px;
-  height: 50px;
-  max-width: 100px;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  cursor: pointer;
-  color: #888;
-}
-
-
-#inspiration-modal {
-  max-height: calc(100vh - 150px); /* Altura máxima ajustável conforme necessário */
-  overflow-y: auto;
-}
-.bordered {
-  border: 3px solid #133551;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-.cards-section h2,
-.cards-section h3 {
-  margin: 0;
-}
-
-/* Estilo para as imagens dos mini cards */
 .mini-card img {
-  width: 200px; /* Ajusta a largura da imagem para ocupar todo o espaço disponível */
-  max-width: 200px; /* Define a largura máxima da imagem */
-  height: 200px; /* Mantém a proporção da imagem */
+  width: 200px; 
+  max-width: 200px; 
+  height: 100px; 
 }
 
-/* Estilo para o contêiner dos detalhes da inspiração */
-
-
-
-.cards-section{
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  height: 200px;
-}
-
-.mini-card bordered img{
-  max-width: 150px;
-}
-
-.mini-card bordered{
+.mini-card {
   display: flex;
   border: 3px solid #133551;
 }
 
-.mini-card bordered:hover{
+.mini-card:hover {
   box-shadow: 0px 0px 10px 3px rgba(19, 53, 81, 0.5); 
-
 }
 
-.cards-section{
+.cards-section {
   padding: 18px;
   padding-bottom: 10px;
 }
 
-.cards-section, h3{
+.cards-section h3 {
   padding-bottom: 10px;
-  color:#133551
+  color: #133551;
 }
 
-.cards-section a {
-  text-align: center;
-}
-
-#cards-section{
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  width: 100%;
-
-}
