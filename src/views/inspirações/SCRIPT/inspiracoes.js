@@ -26,13 +26,13 @@ function createInspiration(inspiration) {
     inspirationArray.push(inspiration);
 }
 
+
 function showMiniCards() {
     const divImage = document.getElementById("cards-section");
 
     miniCardsArray.forEach((miniCard, index) => {
         const miniCardContainer = document.createElement('div');
         miniCardContainer.classList.add('mini-card');
-        miniCardContainer.classList.add('bordered');
 
         const miniCardImg = document.createElement('img');
         miniCardImg.src = miniCard.image;
@@ -43,13 +43,17 @@ function showMiniCards() {
         const miniCardSubtitle = document.createElement('h3');
         miniCardSubtitle.textContent = miniCard.subtitle;
 
-
         const miniCardname = document.createElement('h4');
-        miniCardSubtitle.textContent = miniCard.subtitle;
+        miniCardname.textContent = miniCard.name;
+
         miniCardContainer.appendChild(miniCardImg);
-        miniCardContainer.appendChild(miniCardTitle);
-        miniCardContainer.appendChild(miniCardSubtitle);
-        miniCardContainer.appendChild(miniCardname);
+
+        const descriptionDiv = document.createElement('div');
+        descriptionDiv.classList.add('description');
+        descriptionDiv.appendChild(miniCardTitle);
+        descriptionDiv.appendChild(miniCardSubtitle);
+        descriptionDiv.appendChild(miniCardname);
+        miniCardContainer.appendChild(descriptionDiv);
 
         divImage.appendChild(miniCardContainer);
 
