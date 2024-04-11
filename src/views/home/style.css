@@ -1,19 +1,18 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 
 
 * {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    vertical-align:baseline;
-    list-style:none;
-    border:0
+    vertical-align: baseline;
+    list-style: none;
+    border: 0
 }
 
-body{
-    background: linear-gradient(90deg, rgba(173,216,230,1) 0%, rgba(198,221,226,1) 100%);
+body {
+    background: linear-gradient(90deg, rgba(173, 216, 230, 1) 0%, rgba(198, 221, 226, 1) 100%);
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
 
@@ -25,38 +24,41 @@ body{
 
 /* Estilo cabeçalho */
 
-header{
+header {
     padding: 5px 4%;
     /* background-color: #ffffff; */
 }
 
-header > .interface{
+
+ 
+
+header .interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header a{
+header a {
     color: #262323;
     text-decoration: none;
 }
 
-header a:hover{
+header a:hover, #logo:hover {
     display: inline-block;
     color: #133551;
     transform: scale(1.05);
 }
 
-header nav ul{
+header nav.menuDesktop ul {
     list-style-type: none;
 }
 
-header nav ul li{
+header nav.menuDesktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
 
-#logo img{
+#logo img {
     max-width: 150px;
 }
 
@@ -69,13 +71,85 @@ header nav ul li{
     color: #133551;
 }
 
-.mentalHealth h5, h3, h4 {
+.mentalHealth h5,
+h3,
+h4 {
     color: #133551;
 }
 
+/* Estilo menuMobile */
+.btnAbrirMenu i{
+    color: #133551;
+    font-size: 40px;
+}
 
 
-.welcome{
+.menuMobile{
+    background: linear-gradient(90deg, rgba(173, 216, 230, 1) 0%, rgba(198, 221, 226, 1) 100%);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.menuMobile.abrirMenu{
+    width: 70%;
+
+}
+
+.menuMobile.abrirMenu ~ .overlayMenu{
+    display: block;
+}
+
+.menuMobile .btnFechar{
+    padding: 20px 4%;
+}
+
+.menuMobile .btnFechar i{
+    color: #133551;
+    font-size: 30px;
+}
+
+.menuMobile nav ul{
+    text-align: right;
+}
+
+.menuMobile nav ul li{
+    padding: 20px 8%;
+
+}
+
+
+.menuMobile nav ul li a{
+    /* color: white; */
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+}
+
+.menuMobile nav ul li a:hover{
+    background-color: #133551;
+    color: white;
+}
+
+.overlayMenu{
+    background-color: rgba(0, 0, 0, 0.477);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888;
+    display: none;
+}
+
+
+.welcome {
     padding: 40px;
     padding-bottom: 60px;
     display: flex;
@@ -83,92 +157,94 @@ header nav ul li{
     flex-direction: row;
 }
 
-.welcomeDiv{
+.welcomeDiv {
     display: flex;
     flex-direction: column;
 }
 
-.welcomeDiv{
+.welcomeDiv {
     position: relative;
 }
 
-.welcome h1{
+.welcome h1 {
     padding-bottom: 20px;
 }
 
-.welcome img{
+.welcome img {
     max-width: 500px;
 }
 
-.text{
+.text {
     padding: 40px;
     text-align: left;
-    
+
 }
 
 .text2 {
     padding: 40px;
     text-align: right;
-  }
+}
 
 
 
-.content h1{
+.content h1 {
     padding-bottom: 20px;
 }
 
-.mentalImg img{
-    display: block; 
+.mentalImg img {
+    display: block;
     margin: 0 auto;
     max-width: 500px;
 
 }
 
-.mentalImg h1{
-    display: block; 
+.mentalImg h1 {
+    display: block;
     margin: 0 auto;
 }
 
-.content .phrase{
+.content .phrase {
     padding: 40px;
     text-align: end;
 }
 
-.content .phrase2{
+.content .phrase2 {
     padding: 40px;
     text-align: start;
 }
 
-.content span{
+.content span {
     font-style: italic;
 }
 
 
-.resources{
+.resources {
     padding: 40px;
     margin-top: 150px;
     display: flex;
     justify-content: space-around;
 }
 
-.resourcesTitle, h1, p {
+.resourcesTitle,
+h1,
+p {
     padding-bottom: 15px;
 
 
 }
 
-.mentalHealth button{
+.mentalHealth button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #f17894;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px; 
+    margin-top: 20px;
     cursor: pointer;
 }
 
-.mentalHealth button:hover{
+.mentalHealth button:hover {
     background-color: #90ee90;
 
 }
@@ -176,7 +252,7 @@ header nav ul li{
 
 
 
-.resourcesCard{
+.resourcesCard {
     gap: 20px;
     display: flex;
     text-align: center;
@@ -185,7 +261,7 @@ header nav ul li{
 
 .card1,
 .card2 {
-  width: 100%; 
+    width: 100%;
 }
 
 .cardImg {
@@ -196,79 +272,84 @@ header nav ul li{
 
 }
 
-.cardImg img{
-    height: 200px; 
+.cardImg img {
+    height: 200px;
     width: 184px;
 
 }
 
-.card1:hover, .card2:hover  {
-    box-shadow: 0px 0px 10px 3px rgba(19, 53, 81, 0.5); 
-  }
+.card1:hover,
+.card2:hover {
+    box-shadow: 0px 0px 10px 3px rgba(19, 53, 81, 0.5);
+}
 
 .cardContent {
     border: 3px solid #133551;
 }
 
-.inspirations{
+.inspirations {
     display: flex;
     justify-content: space-around;
     margin-top: 150px;
 
 }
 
-.inspirationsContent{
+.inspirationsContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.inspirationsCard img{
+.inspirationsCard img {
     max-width: 150px;
 }
 
-.inspirationsCard{
+.inspirationsCard {
     display: flex;
     border: 3px solid #133551;
 }
 
-.inspirationsCard:hover{
-    box-shadow: 0px 0px 10px 3px rgba(19, 53, 81, 0.5); 
+.inspirationsCard:hover {
+    box-shadow: 0px 0px 10px 3px rgba(19, 53, 81, 0.5);
 
 }
 
-.inspirationsCardContent{
+.inspirationsCardContent {
     padding: 18px;
     padding-bottom: 10px;
 }
 
-.inspirationsCardContent, h3, p, h5{
+.inspirationsCardContent,
+h3,
+p,
+h5 {
     padding-bottom: 10px;
 }
 
 .inspirationsContent a {
     text-align: center;
-  }
+}
 
 
-.suport{
+.suport {
     margin: 150px;
     padding: 20px;
     display: flex;
-    justify-content:  space-around;
+    justify-content: space-around;
 }
 
-.help{
+.help {
     text-align: center;
-    
-    
+
+
 }
 
-.help p, h4{
-    padding-top: 20px;    
+.help p,
+h4 {
+    padding-top: 20px;
 }
 
-.help i{
+.help i {
     font-size: 30px;
     color: #133551;
 }
@@ -290,15 +371,93 @@ footer {
 
 
 ::-webkit-scrollbar-thumb {
-    background-color: #133551; 
-    border-radius: 5px; 
+    background-color: #133551;
+    border-radius: 5px;
 }
 
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #add8e6; 
+    background-color: #add8e6;
 }
 
-@media (max-width: 600px) {
-    
+@media (max-width: 1020px) {
+    .menuDesktop * {
+        display: none;
+    }
+
+    .mentalHealth * {
+        padding-bottom: 15px;
+    }
+
+
+    .welcome {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mentalHealth h1 {
+        text-align: center;
+
+    }
+
+    .mentalHealth img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content .text2 {
+        text-align: center;
+    }
+
+    .resources {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resourcesCard {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .card1:hover, .card2:hover, .inspirationsCard:hover {
+        box-shadow: none;
+    }
+
+    .inspirations {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .inspirationsCard {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .inspirationsCardContent {
+        padding: 10px;
+    }
+
+    .inspirationsCardContent h3,
+    p,
+    h5 {
+        margin: 5px 0;
+    }
+
+    .suport {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 100%;
+        text-align: center;
+    }
 }

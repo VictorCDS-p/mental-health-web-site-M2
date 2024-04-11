@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apoio</title>
     <link rel="stylesheet" href="../home/style.css">
     <link rel="stylesheet" href="./CSS/apoio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
     <header>
         <div class="interface">
+            <div class="desktop">
+
+            </div>
             <div id="logo">
                 <a href="../../../index.html">
-                    <img src="../Image/logo.png" alt="Logo"> 
+                    <img src="../Image/logo.png" alt="Logo" />
                 </a>
             </div>
-            <nav class="menu-desktop">
+            <nav class="menuDesktop">
                 <ul>
                     <li><a href="../../../index.html">Início</a></li>
                     <li><a href="../recursos/recursos.html">Recursos</a></li>
@@ -23,6 +29,25 @@
                     <li><a href="../apoio/apoio.html">Apoio</a></li>
                 </ul>
             </nav>
+            <div class="btnAbrirMenu" id="btnMenu">
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="menuMobile" id="menuMobile">
+                <div class="btnFechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../../../index.html">Início</a></li>
+                        <li><a href="../recursos/recursos.html">Recursos</a></li>
+                        <li><a href="../inspirações/inspiracao.html">Inspirações</a></li>
+                        <li><a href="../apoio/apoio.html">Apoio</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlayMenu">
+
+            </div>
         </div>
     </header>
 
@@ -38,17 +63,24 @@
                     <p>Disque 188</p>
                 </div>
             </div>
-            
+
             <div class="public-info">
-                <p class="text">Se você ou alguém que você conhece está passando por uma crise, saiba que existem recursos disponíveis para oferecer apoio e atendimento.<br><br>Não hesite em contatar linhas diretas de apoio, como o Centro de Valorização da Vida, ou procurar a sua Unidade Básica de Saúde (UBS) e o Centro de Atenção Psicossocial (CAPS) local para obter orientação e suporte.<br><br>Lembre-se de que você não está sozinho e há pessoas dispostas a ajudar você a superar momentos difíceis</p>
-                <a href="https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/caps" class="more-info-button">Mais informações aqui</a>
+                <p class="text">Se você ou alguém que você conhece está passando por uma crise, saiba que existem
+                    recursos disponíveis para oferecer apoio e atendimento.<br><br>Não hesite em contatar linhas diretas
+                    de apoio, como o Centro de Valorização da Vida, ou procurar a sua Unidade Básica de Saúde (UBS) e o
+                    Centro de Atenção Psicossocial (CAPS) local para obter orientação e suporte.<br><br>Lembre-se de que
+                    você não está sozinho e há pessoas dispostas a ajudar você a superar momentos difíceis</p>
+                <a href="https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/caps" class="more-info-button">Mais
+                    informações aqui</a>
             </div>
         </div>
-        
+
         <div class="options">
-            <p class="caption">Além dos serviços da rede pública, existem outras instituições que oferecem apoio em saúde mental com valores acessíveis ou próximos a gratuidade.<br> Consulte aqui algumas organizações e canais de atendimento:</p>
+            <p class="caption">Além dos serviços da rede pública, existem outras instituições que oferecem apoio em
+                saúde mental com valores acessíveis ou próximos a gratuidade.<br> Consulte aqui algumas organizações e
+                canais de atendimento:</p>
         </div>
-        
+
         <div class="filter-container">
             <div class="filter">
                 <label class="filter" for="type-filter">Filtrar por:</label>
@@ -58,22 +90,24 @@
                     <option value="presencial">Presencial</option>
                 </select>
             </div>
-            
+
             <div class="search">
                 <label for="region-search">Buscar região:</label>
                 <input type="text" id="region-search" placeholder="Digite a região...">
             </div>
         </div>
-        
+
         <div class="card-container">
             <div class="card-wrapper" id="cards"></div>
         </div>
     </div>
-    
+
     <footer>
         <p>&copy; 2024 Saúde Mental e Bem-Estar</p>
     </footer>
-    
+
     <script src="./SCRIPT/apoio.js"></script>
+    <script src="../home/script.js"></script>
 </body>
+
 </html>
