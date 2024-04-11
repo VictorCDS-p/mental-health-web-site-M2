@@ -60,7 +60,12 @@ header nav.menuDesktop ul li {
 
 #logo img {
     max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
 
 .mentalHealth p {
     font-size: 16px;
@@ -96,6 +101,10 @@ h4 {
     transition: 0.5s;
 }
 
+#logoMobile img {
+    max-width: 150px;
+}
+
 .menuMobile.abrirMenu{
     width: 70%;
 
@@ -114,7 +123,7 @@ h4 {
     font-size: 30px;
 }
 
-.menuMobile nav ul{
+.menuMobile nav ul, #logoMobile{
     text-align: right;
 }
 
@@ -381,9 +390,18 @@ footer {
 }
 
 @media (max-width: 1020px) {
+    header .interface{
+        display: flex;
+    }
     .menuDesktop * {
         display: none;
     }
+
+    #logo{
+        display: none;
+        justify-content: center;
+    }
+
 
     .mentalHealth * {
         padding-bottom: 15px;
