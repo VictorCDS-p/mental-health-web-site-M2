@@ -272,8 +272,8 @@ p {
     gap: 20px;
     display: flex;
     text-align: center;
-    max-width: 800px; /* Definindo uma largura máxima */
-    margin: 0 auto; /* Centralizando os cards */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 
@@ -462,6 +462,12 @@ footer {
         flex-direction: column;
         margin: 0 auto;
         max-width: 100%;
+    }
+
+    .cardContent {
+        border: 3px solid #133551;
+        padding: 5%;
+        height: 100%;
     }
 
     .card1:hover, .card2:hover, .inspirationsCard:hover {
