@@ -10,6 +10,10 @@
     display: flex;
     justify-content: center;
   }
+
+  .form-box {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -23,7 +27,7 @@
   }
 
   p{
-    text-align: start;
+    align-items: center;
   }
   .cardContainer{
     display: flex;
@@ -31,11 +35,19 @@
     
   }
 
+  .form-box {
+    width: 80%;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
   .container-all {
     font-size: 15px;
+  }
+  
+  .form-box {
+    width: 80%;
   }
 }
 
@@ -118,7 +130,13 @@ ul {
     width: 300px;
     margin: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
   }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
 
 .card img {
     width: 100%;
@@ -154,4 +172,46 @@ ul {
     display: none;
   }
 
- 
+  footer{
+    position: relative;
+    bottom: 0;
+    transform: translateY(115px);
+  }
+
+  .form-box {
+    background-color: white;
+    padding: 20px;
+    margin: 50px;
+    margin-top: 100px;
+    border-radius: 30px;
+    width: 80%;
+    max-width: 500px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+input {
+  background-color:  lightblue;
+  border-radius: 30px;
+  box-shadow: black;
+}
+
+button {
+  margin-top: 20px;
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+  transition: all 0.3s ease
+}
+
+textarea {
+  width: 90%;
+  padding: 30px;
+  margin: 20px;
+  border: solid black 1px;
+}
