@@ -15,10 +15,9 @@ body {
     background: linear-gradient(90deg, rgba(173, 216, 230, 1) 0%, rgba(198, 221, 226, 1) 100%);
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
+    
 
 }
-
-
 
 
 
@@ -28,6 +27,7 @@ header {
     padding: 5px 4%;
     /* background-color: #ffffff; */
 }
+
 
 
  
@@ -44,7 +44,6 @@ header a {
 }
 
 header a:hover, #logo:hover {
-    display: inline-block;
     color: #133551;
     transform: scale(1.05);
 }
@@ -67,8 +66,8 @@ header nav.menuDesktop ul li {
 
 
 
-.mentalHealth p {
-    font-size: 16px;
+.mentalHealth p , h5{
+    font-size: 20px;
 }
 
 .mentalHealth h1 {
@@ -227,7 +226,7 @@ h4 {
 }
 
 
-.resources {
+.resourcesInicial {
     padding: 40px;
     margin-top: 150px;
     display: flex;
@@ -238,7 +237,9 @@ h4 {
 h1,
 p {
     padding-bottom: 15px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -277,13 +278,14 @@ p {
     border: 3px solid #133551;
     background-color: white;
     border-bottom: none;
+    
 
 
 }
 
 .cardImg img {
-    height: 200px;
-    width: 184px;
+    height: 220px;
+    width: auto;
 
 }
 
@@ -345,6 +347,12 @@ h5 {
     padding: 20px;
     display: flex;
     justify-content: space-around;
+}
+
+.suport .content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .help {
@@ -450,6 +458,7 @@ footer {
         flex-direction: column-reverse;
         text-align: center;
         padding: 15px;
+        padding-bottom: 100px;
     }
 
     .inspirationsCard {
