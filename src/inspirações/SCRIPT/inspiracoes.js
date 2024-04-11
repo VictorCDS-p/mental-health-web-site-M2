@@ -137,39 +137,34 @@ createInspiration(noah);
 
 const lizzieCard = new MiniCard(
     "../Image/LizzieVelasquez.png",
-    "Superando a ansiedade",
-    "Uma história de resiliência e autocuidado",
+    "Além das Aparências",
+    "Uma Lição de Força e Otimismo Contra o Bullying",
     "Lizzie Velasquez",
 );
-
 const lukeCard = new MiniCard(
     "../Image/luke.png",
-    "Encontrando a esperança",
-    "Uma jornada de superação pessoal",
+    "Encontrando a Esperança",
+    "Uma Jornada de Superação Pessoal",
     "Luke Tyburski",
 );
-
 const miriamCard = new MiniCard(
     "../Image/miriam.png.jpg",
-    "Vencendo o estigma",
-    "Uma história de superação e parceria",
+    "Vencendo o Estigma",
+    "Uma História de Superação e Parceria",
     "Miriam Machado",
 );
-
 const filipeCard = new MiniCard(
     "../Image/filipe.png",
-    "Lidando com a depressão",
-    "Uma jornada de busca por ajuda e recuperação",
+    " Enfrentando a Escuridão",
+    "A Busca por Ajuda e Recuperação ",
     "Filipe Rodrigues",
 );
-
 const noahCard = new MiniCard(
     "../Image/noah.png",
-    "Superando o autismo",
-    "Uma inspiradora história de resiliência",
+    "A Mente Borbulhante de Noah",
+    "Uma Jornada de Autodescoberta e Aceitação",
     "Noah Faria",
 );
-
 
 createMiniCard(lizzieCard);
 createMiniCard(lukeCard);
