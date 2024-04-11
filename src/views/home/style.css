@@ -285,8 +285,7 @@ p {
 
 .cardImg img {
     height: 220px;
-    width: auto;
-
+    
 }
 
 .card1:hover,
@@ -296,6 +295,8 @@ p {
 
 .cardContent {
     border: 3px solid #133551;
+    padding: 5%;
+    height: auto;
 }
 
 .inspirations {
@@ -435,7 +436,7 @@ footer {
         text-align: center;
     }
 
-    .resources {
+    .resourcesInicial {
         text-align: center;
         display: flex;
         flex-direction: column;
