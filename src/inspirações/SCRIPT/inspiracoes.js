@@ -103,7 +103,7 @@ const luke = new Inspiration(
 const lizzie = new Inspiration(
     "Lizzie Velasquez",
     "../Image/LizzieVelasquez.png",
-    'A norte-americana Lizzie Velasquez, conhecida como a mulher mais feia do mundo, é um dos mais belos exemplos de força de vontade.Lizzie nasceu com uma rara doença genética (ainda desconhecida) que impede o ganho de gordura corporal. Com menos de 30kg, a condição de Lizzie fez com que ficasse cega de um olho e desenvolvesse um frágil sistema imunitário.Alvo de cruéis ataques de bullying na escola e na internet (quando se tornou famosa com um vídeo que a intitulava “a mulher mais feia do mundo”), Lizzie enfrentou momentos de forte depressão.Mas, conhecida pela sua força e otimismo, Lizzie não se deixou abater e recuperou-se! A jovem usou a visibilidade negativa que atribuíram à sua imagem para iniciar uma campanha contra o cyberbullying ao redor de todo o mundo.'
+    'A norte-americana Lizzie Velasquez, conhecida como “a mulher mais feia do mundo”, é um dos mais belos exemplos de força de vontade.Lizzie nasceu com uma rara doença genética (ainda desconhecida) que impede o ganho de gordura corporal. Com menos de 30kg, a condição de Lizzie fez com que ficasse cega de um olho e desenvolvesse um frágil sistema imunitário.Alvo de cruéis ataques de bullying na escola e na internet (quando se tornou “famosa” com um vídeo que a intitulava “a mulher mais feia do mundo”), Lizzie enfrentou momentos de forte depressão.Mas, conhecida pela sua força e otimismo, Lizzie não se deixou abater e recuperou-se! A jovem usou a visibilidade negativa que atribuíram à sua imagem para iniciar uma campanha contra o cyberbullying ao redor de todo o mundo.'
 );
 
 const miriam = new Inspiration(
