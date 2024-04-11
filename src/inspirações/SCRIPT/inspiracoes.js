@@ -33,29 +33,28 @@ function showMiniCards() {
     miniCardsArray.forEach((miniCard, index) => {
         const miniCardContainer = document.createElement('div');
         miniCardContainer.classList.add('mini-card');
-
         const miniCardImg = document.createElement('img');
-        miniCardImg.src = miniCard.image;
-
         const miniCardTitle = document.createElement('h2');
-        miniCardTitle.textContent = miniCard.title;
-
         const miniCardSubtitle = document.createElement('h3');
-        miniCardSubtitle.textContent = miniCard.subtitle;
-
         const miniCardname = document.createElement('h4');
-        miniCardname.textContent = miniCard.name;
-
-        miniCardContainer.appendChild(miniCardImg);
-
         const descriptionDiv = document.createElement('div');
         descriptionDiv.classList.add('description');
+
+
+       
+        miniCardImg.src = miniCard.image;
+        miniCardTitle.textContent = miniCard.title;
+        miniCardSubtitle.textContent = miniCard.subtitle;
+        miniCardname.textContent = miniCard.name;
+
+
+        miniCardContainer.appendChild(miniCardImg);
         descriptionDiv.appendChild(miniCardTitle);
         descriptionDiv.appendChild(miniCardSubtitle);
         descriptionDiv.appendChild(miniCardname);
         miniCardContainer.appendChild(descriptionDiv);
-
         divImage.appendChild(miniCardContainer);
+
 
         miniCardContainer.addEventListener('click', function() {
             showInspiration(index);
@@ -127,48 +126,65 @@ const noah = new Inspiration(
     'Noah Faria, um garoto brasileiro e britânico de 8 anos, tem autismo e começou a compartilhar sua história em palestras em Londres, onde reside com sua mãe, Renata Formoso. Juntos, eles escreveram o livro infantil "The Fizzy Brain" (Mente Borbulhante), que aborda como é viver com autismo e Transtorno do Déficit de Atenção com Hiperatividade (TDAH). Noah descreveu sua mente como acelerada, o que ajudou no diagnóstico de sua condição. O livro, inspirado em rimas feitas durante uma caminhada, conta com ilustrações de Emi Webber, uma britânica também diagnosticada com TDAH e autismo na vida adulta. O sucesso do livro levou Noah a dar palestras em escolas, onde fala abertamente sobre sua condição e a importância do respeito às diferenças. Embora atualmente disponível apenas em inglês, uma campanha de financiamento coletivo foi lançada para lançar o livro em português, visando ampliar o alcance da mensagem de Noah no Brasil.'
 );
 
+const ellen = new Inspiration(
+    "Ellen Milgrau",
+    "../Image/EllenMilgrau.png",
+    'Ellen Caroline Melo, influenciadora digital, compartilha sua jornada de luta contra a bipolaridade e comportamento suicida, tratados com medicamentos e terapia. Ellen passou por momentos difíceis, resultando em profunda depressão. Com a ajuda de um amigo, iniciou tratamento psiquiátrico e terapia, gradualmente recuperando sua energia e carreira. Após uma fase turbulenta na moda, onde sua autenticidade lhe custou contratos, encontrou sucesso na internet com conteúdo autêntico e sem filtros. Apresentou programas de TV, como o "Ridículos", e agora se dedica ao projeto "Faxina Milgrau", limpando casas de pessoas com transtornos psiquiátricos. Sua iniciativa visa desestigmatizar doenças mentais e promover empatia, recebendo apoio de celebridades e marcas. Ellen compartilha abertamente suas lutas e conquistas, demonstrando sua humanidade e desejo de ajudar os outros.'
+);
+
 createInspiration(lizzie);
 createInspiration(luke);
 createInspiration(miriam);
 createInspiration(filipe);
 createInspiration(noah);
+createInspiration(ellen);
 
 
 
 const lizzieCard = new MiniCard(
     "../Image/LizzieVelasquez.png",
-    "Superando a ansiedade",
-    "Uma história de resiliência e autocuidado",
+    "Além das Aparências",
+    "Uma Lição de Força e Otimismo Contra o Bullying",
     "Lizzie Velasquez",
 );
 
 const lukeCard = new MiniCard(
     "../Image/luke.png",
-    "Encontrando a esperança",
-    "Uma jornada de superação pessoal",
+    "Encontrando a Esperança",
+    "Uma Jornada de Superação Pessoal",
     "Luke Tyburski",
 );
 
 const miriamCard = new MiniCard(
     "../Image/miriam.png.jpg",
-    "Vencendo o estigma",
-    "Uma história de superação e parceria",
+    "Vencendo o Estigma",
+    "Uma História de Superação e Parceria",
     "Miriam Machado",
 );
 
 const filipeCard = new MiniCard(
     "../Image/filipe.png",
-    "Lidando com a depressão",
-    "Uma jornada de busca por ajuda e recuperação",
+    " Enfrentando a Escuridão",
+    "A Busca por Ajuda e Recuperação ",
     "Filipe Rodrigues",
 );
 
 const noahCard = new MiniCard(
     "../Image/noah.png",
-    "Superando o autismo",
-    "Uma inspiradora história de resiliência",
+    "A Mente Borbulhante de Noah",
+    "Uma Jornada de Autodescoberta e Aceitação",
     "Noah Faria",
 );
+
+
+const ellenCard = new MiniCard(
+    "../Image/EllenMilgrau.png",
+    "Resiliência e Renascimento",
+    "Superando Traumas e Desafios",
+    "Ellen Milgrau",
+);
+
+
 
 
 createMiniCard(lizzieCard);
@@ -177,6 +193,7 @@ createMiniCard(lukeCard);
 createMiniCard(miriamCard);
 
 createMiniCard(filipeCard);
-createMiniCard(noahCard)
+createMiniCard(noahCard);
+createMiniCard(ellenCard);
 
 showMiniCards();

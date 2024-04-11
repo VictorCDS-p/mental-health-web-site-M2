@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .cards-section {
   display: flex;
@@ -16,6 +16,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.3s ease;
+
 }
 
 .mini-card:hover {
@@ -30,15 +31,15 @@
 
 .modal {
   display: none;
-  position: fixed; /* Fixa o modal na tela */
+  position: fixed; 
   z-index: 999;
-  top: 50%; /* Centraliza verticalmente */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translate(-50%, -50%); /* Centraliza completamente */
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   background-color: rgba(0, 0, 0, 0.5);
-  max-width: 80%; /* Define a largura máxima do modal */
-  max-height: 80%; /* Define a altura máxima do modal */
-  overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo do modal for maior que a altura máxima */
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto; 
 }
 
 
@@ -77,6 +78,10 @@
 
 .inspiration-description {
   text-align: justify;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial;
+  color: #133551;
+  font-size: 20px;
+
 }
 
 
