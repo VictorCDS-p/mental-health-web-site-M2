@@ -12,3 +12,4 @@ $menu.addEventListener("click", ()=>{
 $overlay.addEventListener("click", ()=>{
     $menu.classList.remove("abrirMenu")
 })
+

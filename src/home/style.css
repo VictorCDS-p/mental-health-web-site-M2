@@ -272,16 +272,21 @@ p {
     gap: 20px;
     display: flex;
     text-align: center;
-
+    max-width: 800px; /* Definindo uma largura máxima */
+    margin: 0 auto; /* Centralizando os cards */
 }
+
+
 
 .card1,
 .card2 {
-    width: 100%;
+    flex: 1; 
+    max-width: 350px;
+    height: auto;
 }
 
 .cardImg {
-    border: 3px solid #133551;
+    border: 3px solid #3e474f;
     background-color: white;
     border-bottom: none;
     
@@ -302,7 +307,7 @@ p {
 .cardContent {
     border: 3px solid #133551;
     padding: 5%;
-    height: auto;
+    height: 150px;
 }
 
 .inspirations {
@@ -312,10 +317,10 @@ p {
 
 }
 
-.inspirationsContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.inspirationsCardContent {
+    padding: 18px;
+    padding-bottom: 10px;
+    display: inline-block; 
 }
 
 .inspirationsCard img {
@@ -332,10 +337,7 @@ p {
 
 }
 
-.inspirationsCardContent {
-    padding: 18px;
-    padding-bottom: 10px;
-}
+
 
 .inspirationsCardContent,
 h3,
@@ -456,8 +458,8 @@ footer {
 
     .resourcesCard {
         display: flex;
+        align-items: center;
         flex-direction: column;
-        width: 80%;
         margin: 0 auto;
         max-width: 100%;
     }
