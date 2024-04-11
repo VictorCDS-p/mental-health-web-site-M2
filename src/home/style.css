@@ -276,6 +276,18 @@ p {
     margin: 0 auto;
 }
 
+.resourcesTitle a{
+    text-decoration: none; 
+    display: flex;
+    justify-content: center;
+    
+}
+
+.resourcesTitle h1{
+    text-align: center;
+}
+
+
 
 
 .card1,
@@ -337,6 +349,12 @@ p {
 
 }
 
+.inspirations a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
 
 
 .inspirationsCardContent,
@@ -347,6 +365,10 @@ h5 {
 }
 
 .inspirationsContent a {
+    text-align: center;
+}
+
+.inspirationsContent h1{
     text-align: center;
 }
 
@@ -509,4 +531,3 @@ footer {
         text-align: center;
     }
 }
-
