@@ -76,13 +76,15 @@
 
 }
 
-.inspiration-description {
-  text-align: justify;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial;
-  color: #133551;
-  font-size: 20px;
 
-}
+  .inspiration-description {
+    text-align: justify; 
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial;
+    color: #133551;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px; 
+  }
 
 
 .headerTitle{
@@ -121,7 +123,7 @@
 
 @media screen and (max-width: 768px) {
   .modal-content {
-    width: 90%;
+    width: 90%; /* Largura do modal para telas menores */
     margin: 10px auto;
     max-width: 300px; 
   }
