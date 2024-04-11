@@ -15,8 +15,8 @@ class MiniCard {
     }
 }
 
-let miniCardsArray = [];
-let inspirationArray = [];
+const miniCardsArray = [];
+const inspirationArray = [];
 
 function createMiniCard(miniCard) {
     miniCardsArray.push(miniCard);
@@ -27,19 +27,12 @@ function createInspiration(inspiration) {
 }
 
 function showMiniCards() {
-    const divImage = document.getElementById("card-image");
-    const divDescription = document.getElementById("card-description");
-
-    divImage.innerHTML = '';
-    divDescription.innerHTML = '';
+    const divImage = document.getElementById("cards-section");
 
     miniCardsArray.forEach((miniCard, index) => {
         const miniCardContainer = document.createElement('div');
         miniCardContainer.classList.add('mini-card');
         miniCardContainer.classList.add('bordered');
-
-        const miniCardContent = document.createElement('div');
-        miniCardContent.classList.add('mini-card-content');
 
         const miniCardImg = document.createElement('img');
         miniCardImg.src = miniCard.image;
@@ -50,11 +43,13 @@ function showMiniCards() {
         const miniCardSubtitle = document.createElement('h3');
         miniCardSubtitle.textContent = miniCard.subtitle;
 
-        miniCardContent.appendChild(miniCardTitle);
-        miniCardContent.appendChild(miniCardSubtitle);
 
+        const miniCardname = document.createElement('h4');
+        miniCardSubtitle.textContent = miniCard.subtitle;
         miniCardContainer.appendChild(miniCardImg);
-        miniCardContainer.appendChild(miniCardContent);
+        miniCardContainer.appendChild(miniCardTitle);
+        miniCardContainer.appendChild(miniCardSubtitle);
+        miniCardContainer.appendChild(miniCardname);
 
         divImage.appendChild(miniCardContainer);
 
@@ -67,58 +62,34 @@ function showMiniCards() {
 function closeModal() {
     const modal = document.getElementById("inspiration-modal");
     modal.style.display = "none";
-    
-    // Limpar o conteúdo dentro do modal
-    const modalContent = document.querySelector(".modal-content");
-    modalContent.innerHTML = '';
 }
 
 function showInspiration(index) {
-
-    const divCards = document.getElementById('inspiration-card');
+    const modalContent = document.getElementById("inspiration-content");
     const inspirationsIndex = inspirationArray[index];
 
     const title = document.getElementById('inspiration-title');
     const image = document.getElementById('inspiration-image');
+    const description = document.getElementById('inspiration-description');
 
     title.innerText = inspirationsIndex.name;
     image.src = inspirationsIndex.image;
+    description.innerText = inspirationsIndex.description;
 
-    divCards.style.display = 'block';
     const modal = document.getElementById("inspiration-modal");
-    const modalContent = document.querySelector(".modal-content");
-
-    const nameInpiration = document.createElement('h1');
-    nameInpiration.innerText = inspirationsIndex.name;
-
-    const imageInspiration = document.createElement('img');
-    imageInspiration.src = inspirationsIndex.image;
-
-    const descriptionInspiraction = document.createElement('article');
-    descriptionInspiraction.innerText = inspirationsIndex.description;
-
-    modalContent.innerHTML = '';
-    modalContent.appendChild(nameInpiration);
-    modalContent.appendChild(imageInspiration);
-    modalContent.appendChild(descriptionInspiraction);
-    
-
     modal.style.display = "block";
 
-    
     const closeButton = document.getElementById("close");
     closeButton.onclick = function() {
         closeModal();
     };
 
- 
     window.onclick = function(event) {
         if (event.target == modal) {
             closeModal();
         }
     };
 }
-
 
 const luke = new Inspiration(
     "Luke Tyburski",
@@ -131,10 +102,6 @@ const lizzie = new Inspiration(
     "../Image/LizzieVelasquez.png",
     'A norte-americana Lizzie Velasquez, conhecida como a mulher mais feia do mundo, é um dos mais belos exemplos de força de vontade.Lizzie nasceu com uma rara doença genética (ainda desconhecida) que impede o ganho de gordura corporal. Com menos de 30kg, a condição de Lizzie fez com que ficasse cega de um olho e desenvolvesse um frágil sistema imunitário.Alvo de cruéis ataques de bullying na escola e na internet (quando se tornou famosa com um vídeo que a intitulava “a mulher mais feia do mundo”), Lizzie enfrentou momentos de forte depressão.Mas, conhecida pela sua força e otimismo, Lizzie não se deixou abater e recuperou-se! A jovem usou a visibilidade negativa que atribuíram à sua imagem para iniciar uma campanha contra o cyberbullying ao redor de todo o mundo.'
 );
-
-
-
-
 
 const miriam = new Inspiration(
     "Miriam Machado",
