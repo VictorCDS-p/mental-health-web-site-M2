@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
+
 <body>
     <header>
         <div class="interface">
@@ -54,35 +56,35 @@
             </div>
         </div>
     </header>
-<main>
-    <div class="content">
+    <main>
+        <section class="headerTitle">
+            <h1>Histórias Inspiradoras - Saúde Mental</h1>
+            <p>Encontre conforto e inspiração nas jornadas de superação compartilhadas abaixo.</p>
+        </section>
+        <div id="cards-section" class="cards-section">
+            <!-- Mini cartões de histórias serão adicionados aqui via JavaScript -->
+        </div>
+    
         <div id="inspiration-modal" class="modal">
-            <span id="close" class="close" onclick="closeModal()">&times;</span>
-            <div class="modal-content" id="inspiration-content">
-                <div id="inspiration-card" class="inspiration-card">
-                    <h1 id="inspiration-title"></h1>
-                    <img id="inspiration-image" src="" alt="Inspiração">
-                    <article id="inspiration-description"></article>
+            <div class="modal-content">
+                <span id="close" class="close">&times;</span>
+                <div id="inspiration-content">
+                    <h2 id="inspiration-title" class="inspiration-title"></h2>
+                    <img id="inspiration-image" class="inspiration-image" src="" alt="Imagem da Inspiração">
+                    <p id="inspiration-description" class="inspiration-description"></p>
                 </div>
             </div>
         </div>
-                
-        <div id="image-inspiration" class="image-inspiration">
-            <img src="../Image/superaçao.png.jpg" alt="Inspiração">
-        </div>
-        <div id="mini-cards" class="mini-cards">
-            <h1>Historias de superação</h1>
-            <h4>Inspire-se com relatos emocionantes de pessoas que encontraram apoio</h4>
-            <section id="cards-section" class="cards-section">
-                <div id="description-cards" class="description-cards"></div>
 
-            </section>
-        </div>
-    </div>
-</main>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Saúde Mental e Bem-Estar</p>
+    </footer>
 
 
-<script src="./SCRIPT/inspiracoes.js"></script>
-<script src="../home/script.js"></script>
+    <script src="./SCRIPT/inspiracoes.js"></script>
+    <script src="../home/script.js"></script>
 </body>
+
 </html>
