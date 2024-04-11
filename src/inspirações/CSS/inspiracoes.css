@@ -98,6 +98,7 @@
 
 .headerTitle p{
   font-size: 20px;
+  
 }
 .description{
   padding-top: 20px;
@@ -114,4 +115,31 @@
   color: black;
   padding-top: 20px;
 
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    margin: 10px auto;
+    max-width: 300px; 
+  }
+
+  .inspiration-description {
+    font-size: 20px;
+  }
+
+  .headerTitle h1 {
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+  }
+
+  .headerTitle p {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+
+  }
 }
