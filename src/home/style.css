@@ -276,6 +276,18 @@ p {
     margin: 0 auto;
 }
 
+.resourcesTitle a{
+    text-decoration: none; 
+    display: flex;
+    justify-content: center;
+    
+}
+
+.resourcesTitle h1{
+    text-align: center;
+}
+
+
 
 
 .card1,
@@ -335,6 +347,12 @@ p {
 .inspirationsCard:hover {
     box-shadow: 0px 0px 10px 3px rgba(19, 53, 81, 0.5);
 
+}
+
+.inspirations a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 
